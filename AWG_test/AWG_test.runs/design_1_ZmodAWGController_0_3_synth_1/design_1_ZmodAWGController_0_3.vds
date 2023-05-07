@@ -1,0 +1,854 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Fri May  5 16:47:57 2023
+# Process ID: 23708
+# Current directory: C:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.runs/design_1_ZmodAWGController_0_3_synth_1
+# Command line: vivado.exe -log design_1_ZmodAWGController_0_3.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_ZmodAWGController_0_3.tcl
+# Log file: C:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.runs/design_1_ZmodAWGController_0_3_synth_1/design_1_ZmodAWGController_0_3.vds
+# Journal file: C:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.runs/design_1_ZmodAWGController_0_3_synth_1\vivado.jou
+#-----------------------------------------------------------
+source design_1_ZmodAWGController_0_3.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: see 'xilinx:packagingInfo' : Bad end of element
+CRITICAL WARNING: [IP_Flow 19-1977] Unable to read IP file c:/Users/Takuya/Documents/GitHub/vivado-library/ip/Zmods/ZmodDigitizerController/component.xml. This IP will not be included in the IP Catalog.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Takuya/Documents/GitHub/vivado-library'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+Command: synth_design -top design_1_ZmodAWGController_0_3 -part xc7z020clg484-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 24932 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 867.305 ; gain = 178.645
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'design_1_ZmodAWGController_0_3' [c:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.srcs/sources_1/bd/design_1/ip/design_1_ZmodAWGController_0_3/synth/design_1_ZmodAWGController_0_3.vhd:82]
+	Parameter kDAC_Width bound to: 14 - type: integer 
+	Parameter kExtCalibEn bound to: 0 - type: bool 
+	Parameter kExtScaleConfigEn bound to: 0 - type: bool 
+	Parameter kExtCmdInterfaceEn bound to: 0 - type: bool 
+	Parameter kCh1LgMultCoefStatic bound to: 18'b010000000000000000 
+	Parameter kCh1LgAddCoefStatic bound to: 18'b000000000000000000 
+	Parameter kCh1HgMultCoefStatic bound to: 18'b010000000000000000 
+	Parameter kCh1HgAddCoefStatic bound to: 18'b000000000000000000 
+	Parameter kCh2LgMultCoefStatic bound to: 18'b010000000000000000 
+	Parameter kCh2LgAddCoefStatic bound to: 18'b000000000000000000 
+	Parameter kCh2HgMultCoefStatic bound to: 18'b010000000000000000 
+	Parameter kCh2HgAddCoefStatic bound to: 18'b000000000000000000 
+	Parameter kCh1ScaleStatic bound to: 1'b1 
+	Parameter kCh2ScaleStatic bound to: 1'b0 
+	Parameter kZmodID bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'ZmodAWG_1411_Controller' declared at 'c:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.srcs/sources_1/bd/design_1/ipshared/f80f/src/ZmodAWG_1411_Controller.vhd:56' bound to instance 'U0' of component 'ZmodAWG_1411_Controller' [c:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.srcs/sources_1/bd/design_1/ip/design_1_ZmodAWGController_0_3/synth/design_1_ZmodAWGController_0_3.vhd:170]
+INFO: [Synth 8-638] synthesizing module 'ZmodAWG_1411_Controller' [c:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.srcs/sources_1/bd/design_1/ipshared/f80f/src/ZmodAWG_1411_Controller.vhd:170]
+	Parameter kZmodID bound to: 7 - type: integer 
+	Parameter kDAC_Width bound to: 14 - type: integer 
+	Parameter kExtCalibEn bound to: 0 - type: bool 
+	Parameter kExtScaleConfigEn bound to: 0 - type: bool 
+	Parameter kExtCmdInterfaceEn bound to: 0 - type: bool 
+	Parameter kCh1LgMultCoefStatic bound to: 18'b010000000000000000 
+	Parameter kCh1LgAddCoefStatic bound to: 18'b000000000000000000 
+	Parameter kCh1HgMultCoefStatic bound to: 18'b010000000000000000 
+	Parameter kCh1HgAddCoefStatic bound to: 18'b000000000000000000 
+	Parameter kCh2LgMultCoefStatic bound to: 18'b010000000000000000 
+	Parameter kCh2LgAddCoefStatic bound to: 18'b000000000000000000 
+	Parameter kCh2HgMultCoefStatic bound to: 18'b010000000000000000 
+	Parameter kCh2HgAddCoefStatic bound to: 18'b000000000000000000 
+	Parameter kCh1ScaleStatic bound to: 1'b1 
+	Parameter kCh2ScaleStatic bound to: 1'b0 
+INFO: [Synth 8-638] synthesizing module 'ResetBridge' [c:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.srcs/sources_1/bd/design_1/ipshared/f80f/src/ResetBridge.vhd:96]
+	Parameter kPolarity bound to: 1'b0 
+	Parameter kStages bound to: 2 - type: integer 
+	Parameter kOutputFF bound to: 0 - type: bool 
+INFO: [Synth 8-638] synthesizing module 'SyncAsync' [c:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.srcs/sources_1/bd/design_1/ipshared/f80f/src/SyncAsync.vhd:92]
+	Parameter kResetTo bound to: 1'b0 
+	Parameter kStages bound to: 2 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* async_reg = "TRUE" *) [c:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.srcs/sources_1/bd/design_1/ipshared/f80f/src/SyncAsync.vhd:93]
+INFO: [Synth 8-256] done synthesizing module 'SyncAsync' (1#1) [c:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.srcs/sources_1/bd/design_1/ipshared/f80f/src/SyncAsync.vhd:92]
+INFO: [Synth 8-256] done synthesizing module 'ResetBridge' (2#1) [c:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.srcs/sources_1/bd/design_1/ipshared/f80f/src/ResetBridge.vhd:96]
+INFO: [Synth 8-638] synthesizing module 'SyncBase' [c:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.srcs/sources_1/bd/design_1/ipshared/f80f/src/SyncBase.vhd:96]
+	Parameter kResetTo bound to: 1'b0 
+	Parameter kStages bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'SyncBase' (3#1) [c:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.srcs/sources_1/bd/design_1/ipshared/f80f/src/SyncBase.vhd:96]
+INFO: [Synth 8-638] synthesizing module 'ConfigDAC' [c:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.srcs/sources_1/bd/design_1/ipshared/f80f/src/ConfigDAC.vhd:90]
+	Parameter kDataWidth bound to: 8 - type: integer 
+	Parameter kCommandWidth bound to: 8 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'ADI_SPI' [c:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.srcs/sources_1/bd/design_1/ipshared/f80f/src/ADI_SPI.vhd:95]
+	Parameter kSysClkDiv bound to: 4 - type: integer 
+	Parameter kDataWidth bound to: 8 - type: integer 
+	Parameter kCommandWidth bound to: 8 - type: integer 
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: LVCMOS18 - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'InstIOBUF' to cell 'IOBUF' [c:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.srcs/sources_1/bd/design_1/ipshared/f80f/src/ADI_SPI.vhd:145]
+INFO: [Synth 8-256] done synthesizing module 'ADI_SPI' (4#1) [c:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.srcs/sources_1/bd/design_1/ipshared/f80f/src/ADI_SPI.vhd:95]
+INFO: [Synth 8-256] done synthesizing module 'ConfigDAC' (5#1) [c:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.srcs/sources_1/bd/design_1/ipshared/f80f/src/ConfigDAC.vhd:90]
+	Parameter DDR_CLK_EDGE bound to: SAME_EDGE - type: string 
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter SRTYPE bound to: ASYNC - type: string 
+INFO: [Synth 8-113] binding component instance 'InstDAC_ClkIO_ODDR' to cell 'ODDR' [c:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.srcs/sources_1/bd/design_1/ipshared/f80f/src/ZmodAWG_1411_Controller.vhd:309]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: FAST - type: string 
+INFO: [Synth 8-113] binding component instance 'InstObufDAC_ClkIO' to cell 'OBUF' [c:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.srcs/sources_1/bd/design_1/ipshared/f80f/src/ZmodAWG_1411_Controller.vhd:329]
+	Parameter DDR_CLK_EDGE bound to: SAME_EDGE - type: string 
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter SRTYPE bound to: ASYNC - type: string 
+INFO: [Synth 8-113] binding component instance 'InstDAC_ClkinODDR' to cell 'ODDR' [c:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.srcs/sources_1/bd/design_1/ipshared/f80f/src/ZmodAWG_1411_Controller.vhd:339]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: FAST - type: string 
+INFO: [Synth 8-113] binding component instance 'InstObufDAC_ClkIn' to cell 'OBUF' [c:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.srcs/sources_1/bd/design_1/ipshared/f80f/src/ZmodAWG_1411_Controller.vhd:354]
+INFO: [Synth 8-638] synthesizing module 'GainOffsetCalib' [c:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.srcs/sources_1/bd/design_1/ipshared/f80f/src/GainOffsetCalib.vhd:98]
+	Parameter kWidth bound to: 14 - type: integer 
+	Parameter kExtCalibEn bound to: 0 - type: bool 
+	Parameter kInvert bound to: 0 - type: bool 
+	Parameter kLgMultCoefStatic bound to: 18'b010000000000000000 
+	Parameter kLgAddCoefStatic bound to: 18'b000000000000000000 
+	Parameter kHgMultCoefStatic bound to: 18'b010000000000000000 
+	Parameter kHgAddCoefStatic bound to: 18'b000000000000000000 
+INFO: [Synth 8-256] done synthesizing module 'GainOffsetCalib' (6#1) [c:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.srcs/sources_1/bd/design_1/ipshared/f80f/src/GainOffsetCalib.vhd:98]
+	Parameter DDR_CLK_EDGE bound to: SAME_EDGE - type: string 
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter SRTYPE bound to: ASYNC - type: string 
+INFO: [Synth 8-113] binding component instance 'InstDataODDR' to cell 'ODDR' [c:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.srcs/sources_1/bd/design_1/ipshared/f80f/src/ZmodAWG_1411_Controller.vhd:471]
+	Parameter DDR_CLK_EDGE bound to: SAME_EDGE - type: string 
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter SRTYPE bound to: ASYNC - type: string 
+INFO: [Synth 8-113] binding component instance 'InstDataODDR' to cell 'ODDR' [c:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.srcs/sources_1/bd/design_1/ipshared/f80f/src/ZmodAWG_1411_Controller.vhd:471]
+	Parameter DDR_CLK_EDGE bound to: SAME_EDGE - type: string 
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter SRTYPE bound to: ASYNC - type: string 
+INFO: [Synth 8-113] binding component instance 'InstDataODDR' to cell 'ODDR' [c:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.srcs/sources_1/bd/design_1/ipshared/f80f/src/ZmodAWG_1411_Controller.vhd:471]
+	Parameter DDR_CLK_EDGE bound to: SAME_EDGE - type: string 
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter SRTYPE bound to: ASYNC - type: string 
+INFO: [Synth 8-113] binding component instance 'InstDataODDR' to cell 'ODDR' [c:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.srcs/sources_1/bd/design_1/ipshared/f80f/src/ZmodAWG_1411_Controller.vhd:471]
+	Parameter DDR_CLK_EDGE bound to: SAME_EDGE - type: string 
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter SRTYPE bound to: ASYNC - type: string 
+INFO: [Synth 8-113] binding component instance 'InstDataODDR' to cell 'ODDR' [c:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.srcs/sources_1/bd/design_1/ipshared/f80f/src/ZmodAWG_1411_Controller.vhd:471]
+	Parameter DDR_CLK_EDGE bound to: SAME_EDGE - type: string 
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter SRTYPE bound to: ASYNC - type: string 
+INFO: [Synth 8-113] binding component instance 'InstDataODDR' to cell 'ODDR' [c:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.srcs/sources_1/bd/design_1/ipshared/f80f/src/ZmodAWG_1411_Controller.vhd:471]
+	Parameter DDR_CLK_EDGE bound to: SAME_EDGE - type: string 
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter SRTYPE bound to: ASYNC - type: string 
+INFO: [Synth 8-113] binding component instance 'InstDataODDR' to cell 'ODDR' [c:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.srcs/sources_1/bd/design_1/ipshared/f80f/src/ZmodAWG_1411_Controller.vhd:471]
+	Parameter DDR_CLK_EDGE bound to: SAME_EDGE - type: string 
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter SRTYPE bound to: ASYNC - type: string 
+INFO: [Synth 8-113] binding component instance 'InstDataODDR' to cell 'ODDR' [c:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.srcs/sources_1/bd/design_1/ipshared/f80f/src/ZmodAWG_1411_Controller.vhd:471]
+	Parameter DDR_CLK_EDGE bound to: SAME_EDGE - type: string 
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter SRTYPE bound to: ASYNC - type: string 
+INFO: [Synth 8-113] binding component instance 'InstDataODDR' to cell 'ODDR' [c:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.srcs/sources_1/bd/design_1/ipshared/f80f/src/ZmodAWG_1411_Controller.vhd:471]
+	Parameter DDR_CLK_EDGE bound to: SAME_EDGE - type: string 
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter SRTYPE bound to: ASYNC - type: string 
+INFO: [Synth 8-113] binding component instance 'InstDataODDR' to cell 'ODDR' [c:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.srcs/sources_1/bd/design_1/ipshared/f80f/src/ZmodAWG_1411_Controller.vhd:471]
+	Parameter DDR_CLK_EDGE bound to: SAME_EDGE - type: string 
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter SRTYPE bound to: ASYNC - type: string 
+INFO: [Synth 8-113] binding component instance 'InstDataODDR' to cell 'ODDR' [c:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.srcs/sources_1/bd/design_1/ipshared/f80f/src/ZmodAWG_1411_Controller.vhd:471]
+	Parameter DDR_CLK_EDGE bound to: SAME_EDGE - type: string 
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter SRTYPE bound to: ASYNC - type: string 
+INFO: [Synth 8-113] binding component instance 'InstDataODDR' to cell 'ODDR' [c:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.srcs/sources_1/bd/design_1/ipshared/f80f/src/ZmodAWG_1411_Controller.vhd:471]
+	Parameter DDR_CLK_EDGE bound to: SAME_EDGE - type: string 
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter SRTYPE bound to: ASYNC - type: string 
+INFO: [Synth 8-113] binding component instance 'InstDataODDR' to cell 'ODDR' [c:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.srcs/sources_1/bd/design_1/ipshared/f80f/src/ZmodAWG_1411_Controller.vhd:471]
+	Parameter DDR_CLK_EDGE bound to: SAME_EDGE - type: string 
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter SRTYPE bound to: ASYNC - type: string 
+INFO: [Synth 8-113] binding component instance 'InstDataODDR' to cell 'ODDR' [c:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.srcs/sources_1/bd/design_1/ipshared/f80f/src/ZmodAWG_1411_Controller.vhd:471]
+INFO: [Synth 8-256] done synthesizing module 'ZmodAWG_1411_Controller' (7#1) [c:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.srcs/sources_1/bd/design_1/ipshared/f80f/src/ZmodAWG_1411_Controller.vhd:170]
+INFO: [Synth 8-256] done synthesizing module 'design_1_ZmodAWGController_0_3' (8#1) [c:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.srcs/sources_1/bd/design_1/ip/design_1_ZmodAWGController_0_3/synth/design_1_ZmodAWGController_0_3.vhd:82]
+WARNING: [Synth 8-3331] design GainOffsetCalib has unconnected port cExtLgMultCoef[17]
+WARNING: [Synth 8-3331] design GainOffsetCalib has unconnected port cExtLgMultCoef[16]
+WARNING: [Synth 8-3331] design GainOffsetCalib has unconnected port cExtLgMultCoef[15]
+WARNING: [Synth 8-3331] design GainOffsetCalib has unconnected port cExtLgMultCoef[14]
+WARNING: [Synth 8-3331] design GainOffsetCalib has unconnected port cExtLgMultCoef[13]
+WARNING: [Synth 8-3331] design GainOffsetCalib has unconnected port cExtLgMultCoef[12]
+WARNING: [Synth 8-3331] design GainOffsetCalib has unconnected port cExtLgMultCoef[11]
+WARNING: [Synth 8-3331] design GainOffsetCalib has unconnected port cExtLgMultCoef[10]
+WARNING: [Synth 8-3331] design GainOffsetCalib has unconnected port cExtLgMultCoef[9]
+WARNING: [Synth 8-3331] design GainOffsetCalib has unconnected port cExtLgMultCoef[8]
+WARNING: [Synth 8-3331] design GainOffsetCalib has unconnected port cExtLgMultCoef[7]
+WARNING: [Synth 8-3331] design GainOffsetCalib has unconnected port cExtLgMultCoef[6]
+WARNING: [Synth 8-3331] design GainOffsetCalib has unconnected port cExtLgMultCoef[5]
+WARNING: [Synth 8-3331] design GainOffsetCalib has unconnected port cExtLgMultCoef[4]
+WARNING: [Synth 8-3331] design GainOffsetCalib has unconnected port cExtLgMultCoef[3]
+WARNING: [Synth 8-3331] design GainOffsetCalib has unconnected port cExtLgMultCoef[2]
+WARNING: [Synth 8-3331] design GainOffsetCalib has unconnected port cExtLgMultCoef[1]
+WARNING: [Synth 8-3331] design GainOffsetCalib has unconnected port cExtLgMultCoef[0]
+WARNING: [Synth 8-3331] design GainOffsetCalib has unconnected port cExtLgAddCoef[17]
+WARNING: [Synth 8-3331] design GainOffsetCalib has unconnected port cExtLgAddCoef[16]
+WARNING: [Synth 8-3331] design GainOffsetCalib has unconnected port cExtLgAddCoef[15]
+WARNING: [Synth 8-3331] design GainOffsetCalib has unconnected port cExtLgAddCoef[14]
+WARNING: [Synth 8-3331] design GainOffsetCalib has unconnected port cExtLgAddCoef[13]
+WARNING: [Synth 8-3331] design GainOffsetCalib has unconnected port cExtLgAddCoef[12]
+WARNING: [Synth 8-3331] design GainOffsetCalib has unconnected port cExtLgAddCoef[11]
+WARNING: [Synth 8-3331] design GainOffsetCalib has unconnected port cExtLgAddCoef[10]
+WARNING: [Synth 8-3331] design GainOffsetCalib has unconnected port cExtLgAddCoef[9]
+WARNING: [Synth 8-3331] design GainOffsetCalib has unconnected port cExtLgAddCoef[8]
+WARNING: [Synth 8-3331] design GainOffsetCalib has unconnected port cExtLgAddCoef[7]
+WARNING: [Synth 8-3331] design GainOffsetCalib has unconnected port cExtLgAddCoef[6]
+WARNING: [Synth 8-3331] design GainOffsetCalib has unconnected port cExtLgAddCoef[5]
+WARNING: [Synth 8-3331] design GainOffsetCalib has unconnected port cExtLgAddCoef[4]
+WARNING: [Synth 8-3331] design GainOffsetCalib has unconnected port cExtLgAddCoef[3]
+WARNING: [Synth 8-3331] design GainOffsetCalib has unconnected port cExtLgAddCoef[2]
+WARNING: [Synth 8-3331] design GainOffsetCalib has unconnected port cExtLgAddCoef[1]
+WARNING: [Synth 8-3331] design GainOffsetCalib has unconnected port cExtLgAddCoef[0]
+WARNING: [Synth 8-3331] design GainOffsetCalib has unconnected port cExtHgMultCoef[17]
+WARNING: [Synth 8-3331] design GainOffsetCalib has unconnected port cExtHgMultCoef[16]
+WARNING: [Synth 8-3331] design GainOffsetCalib has unconnected port cExtHgMultCoef[15]
+WARNING: [Synth 8-3331] design GainOffsetCalib has unconnected port cExtHgMultCoef[14]
+WARNING: [Synth 8-3331] design GainOffsetCalib has unconnected port cExtHgMultCoef[13]
+WARNING: [Synth 8-3331] design GainOffsetCalib has unconnected port cExtHgMultCoef[12]
+WARNING: [Synth 8-3331] design GainOffsetCalib has unconnected port cExtHgMultCoef[11]
+WARNING: [Synth 8-3331] design GainOffsetCalib has unconnected port cExtHgMultCoef[10]
+WARNING: [Synth 8-3331] design GainOffsetCalib has unconnected port cExtHgMultCoef[9]
+WARNING: [Synth 8-3331] design GainOffsetCalib has unconnected port cExtHgMultCoef[8]
+WARNING: [Synth 8-3331] design GainOffsetCalib has unconnected port cExtHgMultCoef[7]
+WARNING: [Synth 8-3331] design GainOffsetCalib has unconnected port cExtHgMultCoef[6]
+WARNING: [Synth 8-3331] design GainOffsetCalib has unconnected port cExtHgMultCoef[5]
+WARNING: [Synth 8-3331] design GainOffsetCalib has unconnected port cExtHgMultCoef[4]
+WARNING: [Synth 8-3331] design GainOffsetCalib has unconnected port cExtHgMultCoef[3]
+WARNING: [Synth 8-3331] design GainOffsetCalib has unconnected port cExtHgMultCoef[2]
+WARNING: [Synth 8-3331] design GainOffsetCalib has unconnected port cExtHgMultCoef[1]
+WARNING: [Synth 8-3331] design GainOffsetCalib has unconnected port cExtHgMultCoef[0]
+WARNING: [Synth 8-3331] design GainOffsetCalib has unconnected port cExtHgAddCoef[17]
+WARNING: [Synth 8-3331] design GainOffsetCalib has unconnected port cExtHgAddCoef[16]
+WARNING: [Synth 8-3331] design GainOffsetCalib has unconnected port cExtHgAddCoef[15]
+WARNING: [Synth 8-3331] design GainOffsetCalib has unconnected port cExtHgAddCoef[14]
+WARNING: [Synth 8-3331] design GainOffsetCalib has unconnected port cExtHgAddCoef[13]
+WARNING: [Synth 8-3331] design GainOffsetCalib has unconnected port cExtHgAddCoef[12]
+WARNING: [Synth 8-3331] design GainOffsetCalib has unconnected port cExtHgAddCoef[11]
+WARNING: [Synth 8-3331] design GainOffsetCalib has unconnected port cExtHgAddCoef[10]
+WARNING: [Synth 8-3331] design GainOffsetCalib has unconnected port cExtHgAddCoef[9]
+WARNING: [Synth 8-3331] design GainOffsetCalib has unconnected port cExtHgAddCoef[8]
+WARNING: [Synth 8-3331] design GainOffsetCalib has unconnected port cExtHgAddCoef[7]
+WARNING: [Synth 8-3331] design GainOffsetCalib has unconnected port cExtHgAddCoef[6]
+WARNING: [Synth 8-3331] design GainOffsetCalib has unconnected port cExtHgAddCoef[5]
+WARNING: [Synth 8-3331] design GainOffsetCalib has unconnected port cExtHgAddCoef[4]
+WARNING: [Synth 8-3331] design GainOffsetCalib has unconnected port cExtHgAddCoef[3]
+WARNING: [Synth 8-3331] design GainOffsetCalib has unconnected port cExtHgAddCoef[2]
+WARNING: [Synth 8-3331] design GainOffsetCalib has unconnected port cExtHgAddCoef[1]
+WARNING: [Synth 8-3331] design GainOffsetCalib has unconnected port cExtHgAddCoef[0]
+WARNING: [Synth 8-3331] design GainOffsetCalib has unconnected port cGainState
+WARNING: [Synth 8-3331] design ADI_SPI has unconnected port sWidth[1]
+WARNING: [Synth 8-3331] design ADI_SPI has unconnected port sWidth[0]
+WARNING: [Synth 8-3331] design ConfigDAC has unconnected port sCmdTxAxisTdata[31]
+WARNING: [Synth 8-3331] design ConfigDAC has unconnected port sCmdTxAxisTdata[30]
+WARNING: [Synth 8-3331] design ConfigDAC has unconnected port sCmdTxAxisTdata[29]
+WARNING: [Synth 8-3331] design ConfigDAC has unconnected port sCmdTxAxisTdata[28]
+WARNING: [Synth 8-3331] design ConfigDAC has unconnected port sCmdTxAxisTdata[27]
+WARNING: [Synth 8-3331] design ConfigDAC has unconnected port sCmdTxAxisTdata[26]
+WARNING: [Synth 8-3331] design ConfigDAC has unconnected port sCmdTxAxisTdata[25]
+WARNING: [Synth 8-3331] design ConfigDAC has unconnected port sCmdTxAxisTdata[24]
+WARNING: [Synth 8-3331] design ZmodAWG_1411_Controller has unconnected port cDataAxisTdata[17]
+WARNING: [Synth 8-3331] design ZmodAWG_1411_Controller has unconnected port cDataAxisTdata[16]
+WARNING: [Synth 8-3331] design ZmodAWG_1411_Controller has unconnected port cDataAxisTdata[1]
+WARNING: [Synth 8-3331] design ZmodAWG_1411_Controller has unconnected port cDataAxisTdata[0]
+WARNING: [Synth 8-3331] design ZmodAWG_1411_Controller has unconnected port sExtCh1Scale
+WARNING: [Synth 8-3331] design ZmodAWG_1411_Controller has unconnected port sExtCh2Scale
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 933.305 ; gain = 244.645
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 933.305 ; gain = 244.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 933.305 ; gain = 244.645
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 17 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.srcs/sources_1/bd/design_1/ip/design_1_ZmodAWGController_0_3/constr/ConstrZmodDAC1411_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [c:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.srcs/sources_1/bd/design_1/ip/design_1_ZmodAWGController_0_3/constr/ConstrZmodDAC1411_ooc.xdc] for cell 'U0'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.srcs/sources_1/bd/design_1/ip/design_1_ZmodAWGController_0_3/constr/ConstrZmodDAC1411_ooc.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_ZmodAWGController_0_3_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_ZmodAWGController_0_3_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+Parsing XDC File [C:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.runs/design_1_ZmodAWGController_0_3_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.runs/design_1_ZmodAWGController_0_3_synth_1/dont_touch.xdc]
+Parsing XDC File [c:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.srcs/sources_1/bd/design_1/ip/design_1_ZmodAWGController_0_3/ConstrsZmodDAC.xdc] for cell 'U0'
+Finished Parsing XDC File [c:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.srcs/sources_1/bd/design_1/ip/design_1_ZmodAWGController_0_3/ConstrsZmodDAC.xdc] for cell 'U0'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.srcs/sources_1/bd/design_1/ip/design_1_ZmodAWGController_0_3/ConstrsZmodDAC.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_ZmodAWGController_0_3_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_ZmodAWGController_0_3_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1062.285 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 1 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 1062.285 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1062.285 ; gain = 373.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1062.285 ; gain = 373.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for U0. (constraint file  C:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.runs/design_1_ZmodAWGController_0_3_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1062.285 ; gain = 373.625
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'sCurrentState_reg' in module 'ADI_SPI'
+INFO: [Synth 8-802] inferred FSM for state register 'sCurrentState_reg' in module 'ConfigDAC'
+INFO: [Synth 8-5544] ROM "sConfigErrorFsm" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "sInitDoneDAC_Fsm" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "sCfgTimerRst_n" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "sCmdRxAxisTvalidLoc" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  stidle |                              000 |                              000
+                 stread1 |                              001 |                              010
+                 stread2 |                              010 |                              011
+                 stread3 |                              011 |                              100
+                 stwrite |                              100 |                              001
+                  stdone |                              101 |                              101
+              stassertcs |                              110 |                              110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'sCurrentState_reg' using encoding 'sequential' in module 'ADI_SPI'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 ststart |                             0000 |                             0000
+        stwriteconfigreg |                             0001 |                             0001
+      stwaitdonewritereg |                             0010 |                             0010
+        streadcontrolreg |                             0011 |                             0011
+       stwaitdonereadreg |                             0100 |                             0100
+           stcheckcmdcnt |                             0101 |                             0101
+              stinitdone |                             0110 |                             0110
+                  stidle |                             0111 |                             0111
+          stextspi_wrcmd |                             1000 |                             1000
+      stwaitdoneextwrreg |                             1001 |                             1001
+          stextspi_rdcmd |                             1010 |                             1010
+      stwaitdoneextrdreg |                             1011 |                             1011
+          stregextrxdata |                             1100 |                             1100
+                 sterror |                             1101 |                             1101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'sCurrentState_reg' using encoding 'sequential' in module 'ConfigDAC'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1062.285 ; gain = 373.625
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     36 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 3     
++---Registers : 
+	               36 Bit    Registers := 4     
+	               32 Bit    Registers := 1     
+	               24 Bit    Registers := 1     
+	               18 Bit    Registers := 2     
+	               16 Bit    Registers := 3     
+	               14 Bit    Registers := 2     
+	                8 Bit    Registers := 3     
+	                5 Bit    Registers := 3     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 7     
+	                1 Bit    Registers := 21    
++---Muxes : 
+	   2 Input     18 Bit        Muxes := 2     
+	   2 Input     16 Bit        Muxes := 9     
+	   2 Input      8 Bit        Muxes := 3     
+	  14 Input      8 Bit        Muxes := 3     
+	   2 Input      5 Bit        Muxes := 3     
+	  14 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 6     
+	  14 Input      4 Bit        Muxes := 1     
+	   7 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	  14 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 18    
+	   7 Input      1 Bit        Muxes := 11    
+	   3 Input      1 Bit        Muxes := 1     
+	  14 Input      1 Bit        Muxes := 11    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module SyncAsync 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
+Module ResetBridge 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
+Module SyncBase 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module ADI_SPI 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 3     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   7 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 12    
+	   7 Input      1 Bit        Muxes := 11    
+	   3 Input      1 Bit        Muxes := 1     
+Module ConfigDAC 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               24 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                5 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	  14 Input      8 Bit        Muxes := 3     
+	   2 Input      5 Bit        Muxes := 2     
+	  14 Input      5 Bit        Muxes := 1     
+	  14 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 5     
+	  14 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+	  14 Input      1 Bit        Muxes := 11    
+Module GainOffsetCalib 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     36 Bit       Adders := 1     
++---Registers : 
+	               36 Bit    Registers := 2     
+	               18 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     18 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 1     
+Module ZmodAWG_1411_Controller 
+Detailed RTL Component Info : 
++---Registers : 
+	               14 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-4471] merging register 'InstCh2DAC_Calibration/cCoefAdd_reg[35:0]' into 'InstCh1DAC_Calibration/cCoefAdd_reg[35:0]' [c:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.srcs/sources_1/bd/design_1/ipshared/f80f/src/GainOffsetCalib.vhd:145]
+INFO: [Synth 8-4471] merging register 'InstCh2DAC_Calibration/cCoefMult_reg[17:0]' into 'InstCh1DAC_Calibration/cCoefMult_reg[17:0]' [c:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.srcs/sources_1/bd/design_1/ipshared/f80f/src/GainOffsetCalib.vhd:159]
+INFO: [Synth 8-4471] merging register 'InstCh2DAC_Calibration/cDataInValidR_reg' into 'InstCh1DAC_Calibration/cDataInValidR_reg' [c:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.srcs/sources_1/bd/design_1/ipshared/f80f/src/GainOffsetCalib.vhd:203]
+DSP Report: Generating DSP InstCh1DAC_Calibration/cCalibMult0, operation Mode is: A*B.
+DSP Report: operator InstCh1DAC_Calibration/cCalibMult0 is absorbed into DSP InstCh1DAC_Calibration/cCalibMult0.
+DSP Report: Generating DSP InstCh2DAC_Calibration/cCalibMult0, operation Mode is: A*B.
+DSP Report: operator InstCh2DAC_Calibration/cCalibMult0 is absorbed into DSP InstCh2DAC_Calibration/cCalibMult0.
+WARNING: [Synth 8-3331] design ZmodAWG_1411_Controller has unconnected port cDataAxisTdata[17]
+WARNING: [Synth 8-3331] design ZmodAWG_1411_Controller has unconnected port cDataAxisTdata[16]
+WARNING: [Synth 8-3331] design ZmodAWG_1411_Controller has unconnected port cDataAxisTdata[1]
+WARNING: [Synth 8-3331] design ZmodAWG_1411_Controller has unconnected port cDataAxisTdata[0]
+WARNING: [Synth 8-3331] design ZmodAWG_1411_Controller has unconnected port sExtCh1Scale
+WARNING: [Synth 8-3331] design ZmodAWG_1411_Controller has unconnected port sExtCh2Scale
+WARNING: [Synth 8-3331] design ZmodAWG_1411_Controller has unconnected port cExtCh1LgMultCoef[17]
+WARNING: [Synth 8-3331] design ZmodAWG_1411_Controller has unconnected port cExtCh1LgMultCoef[16]
+WARNING: [Synth 8-3331] design ZmodAWG_1411_Controller has unconnected port cExtCh1LgMultCoef[15]
+WARNING: [Synth 8-3331] design ZmodAWG_1411_Controller has unconnected port cExtCh1LgMultCoef[14]
+WARNING: [Synth 8-3331] design ZmodAWG_1411_Controller has unconnected port cExtCh1LgMultCoef[13]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3886] merging instance 'U0/InstCh1DAC_Calibration/cCoefMult_reg[0]' (FDC) to 'U0/InstCh1DAC_Calibration/cCoefAdd_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/InstCh1DAC_Calibration/cCoefMult_reg[1]' (FDC) to 'U0/InstCh1DAC_Calibration/cCoefAdd_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/InstCh1DAC_Calibration/cCoefMult_reg[2]' (FDC) to 'U0/InstCh1DAC_Calibration/cCoefAdd_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/InstCh1DAC_Calibration/cCoefMult_reg[3]' (FDC) to 'U0/InstCh1DAC_Calibration/cCoefAdd_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/InstCh1DAC_Calibration/cCoefMult_reg[4]' (FDC) to 'U0/InstCh1DAC_Calibration/cCoefAdd_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/InstCh1DAC_Calibration/cCoefMult_reg[5]' (FDC) to 'U0/InstCh1DAC_Calibration/cCoefAdd_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/InstCh1DAC_Calibration/cCoefMult_reg[6]' (FDC) to 'U0/InstCh1DAC_Calibration/cCoefAdd_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/InstCh1DAC_Calibration/cCoefMult_reg[7]' (FDC) to 'U0/InstCh1DAC_Calibration/cCoefAdd_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/InstCh1DAC_Calibration/cCoefMult_reg[8]' (FDC) to 'U0/InstCh1DAC_Calibration/cCoefAdd_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/InstCh1DAC_Calibration/cCoefMult_reg[9]' (FDC) to 'U0/InstCh1DAC_Calibration/cCoefAdd_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/InstCh1DAC_Calibration/cCoefMult_reg[10]' (FDC) to 'U0/InstCh1DAC_Calibration/cCoefAdd_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/InstCh1DAC_Calibration/cCoefMult_reg[11]' (FDC) to 'U0/InstCh1DAC_Calibration/cCoefAdd_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/InstCh1DAC_Calibration/cCoefMult_reg[12]' (FDC) to 'U0/InstCh1DAC_Calibration/cCoefAdd_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/InstCh1DAC_Calibration/cCoefMult_reg[13]' (FDC) to 'U0/InstCh1DAC_Calibration/cCoefAdd_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/InstCh1DAC_Calibration/cCoefMult_reg[14]' (FDC) to 'U0/InstCh1DAC_Calibration/cCoefAdd_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/InstCh1DAC_Calibration/cCoefMult_reg[15]' (FDC) to 'U0/InstCh1DAC_Calibration/cCoefAdd_reg[0]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\InstCh1DAC_Calibration/cCoefMult_reg[16] )
+INFO: [Synth 8-3886] merging instance 'U0/InstCh1DAC_Calibration/cCoefMult_reg[17]' (FDC) to 'U0/InstCh1DAC_Calibration/cCoefAdd_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/InstCh1DAC_Calibration/cCoefAdd_reg[0]' (FDC) to 'U0/InstCh1DAC_Calibration/cCoefAdd_reg[1]'
+INFO: [Synth 8-3886] merging instance 'U0/InstCh1DAC_Calibration/cCoefAdd_reg[1]' (FDC) to 'U0/InstCh1DAC_Calibration/cCoefAdd_reg[2]'
+INFO: [Synth 8-3886] merging instance 'U0/InstCh1DAC_Calibration/cCoefAdd_reg[2]' (FDC) to 'U0/InstCh1DAC_Calibration/cCoefAdd_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U0/InstCh1DAC_Calibration/cCoefAdd_reg[3]' (FDC) to 'U0/InstCh1DAC_Calibration/cCoefAdd_reg[4]'
+INFO: [Synth 8-3886] merging instance 'U0/InstCh1DAC_Calibration/cCoefAdd_reg[4]' (FDC) to 'U0/InstCh1DAC_Calibration/cCoefAdd_reg[5]'
+INFO: [Synth 8-3886] merging instance 'U0/InstCh1DAC_Calibration/cCoefAdd_reg[5]' (FDC) to 'U0/InstCh1DAC_Calibration/cCoefAdd_reg[6]'
+INFO: [Synth 8-3886] merging instance 'U0/InstCh1DAC_Calibration/cCoefAdd_reg[6]' (FDC) to 'U0/InstCh1DAC_Calibration/cCoefAdd_reg[7]'
+INFO: [Synth 8-3886] merging instance 'U0/InstCh1DAC_Calibration/cCoefAdd_reg[7]' (FDC) to 'U0/InstCh1DAC_Calibration/cCoefAdd_reg[8]'
+INFO: [Synth 8-3886] merging instance 'U0/InstCh1DAC_Calibration/cCoefAdd_reg[8]' (FDC) to 'U0/InstCh1DAC_Calibration/cCoefAdd_reg[9]'
+INFO: [Synth 8-3886] merging instance 'U0/InstCh1DAC_Calibration/cCoefAdd_reg[9]' (FDC) to 'U0/InstCh1DAC_Calibration/cCoefAdd_reg[10]'
+INFO: [Synth 8-3886] merging instance 'U0/InstCh1DAC_Calibration/cCoefAdd_reg[10]' (FDC) to 'U0/InstCh1DAC_Calibration/cCoefAdd_reg[11]'
+INFO: [Synth 8-3886] merging instance 'U0/InstCh1DAC_Calibration/cCoefAdd_reg[11]' (FDC) to 'U0/InstCh1DAC_Calibration/cCoefAdd_reg[12]'
+INFO: [Synth 8-3886] merging instance 'U0/InstCh1DAC_Calibration/cCoefAdd_reg[12]' (FDC) to 'U0/InstCh1DAC_Calibration/cCoefAdd_reg[13]'
+INFO: [Synth 8-3886] merging instance 'U0/InstCh1DAC_Calibration/cCoefAdd_reg[13]' (FDC) to 'U0/InstCh1DAC_Calibration/cCoefAdd_reg[14]'
+INFO: [Synth 8-3886] merging instance 'U0/InstCh1DAC_Calibration/cCoefAdd_reg[14]' (FDC) to 'U0/InstCh1DAC_Calibration/cCoefAdd_reg[15]'
+INFO: [Synth 8-3886] merging instance 'U0/InstCh1DAC_Calibration/cCoefAdd_reg[15]' (FDC) to 'U0/InstCh1DAC_Calibration/cCoefAdd_reg[16]'
+INFO: [Synth 8-3886] merging instance 'U0/InstCh1DAC_Calibration/cCoefAdd_reg[16]' (FDC) to 'U0/InstCh1DAC_Calibration/cCoefAdd_reg[17]'
+INFO: [Synth 8-3886] merging instance 'U0/InstCh1DAC_Calibration/cCoefAdd_reg[17]' (FDC) to 'U0/InstCh1DAC_Calibration/cCoefAdd_reg[18]'
+INFO: [Synth 8-3886] merging instance 'U0/InstCh1DAC_Calibration/cCoefAdd_reg[18]' (FDC) to 'U0/InstCh1DAC_Calibration/cCoefAdd_reg[19]'
+INFO: [Synth 8-3886] merging instance 'U0/InstCh1DAC_Calibration/cCoefAdd_reg[19]' (FDC) to 'U0/InstCh1DAC_Calibration/cCoefAdd_reg[20]'
+INFO: [Synth 8-3886] merging instance 'U0/InstCh1DAC_Calibration/cCoefAdd_reg[20]' (FDC) to 'U0/InstCh1DAC_Calibration/cCoefAdd_reg[21]'
+INFO: [Synth 8-3886] merging instance 'U0/InstCh1DAC_Calibration/cCoefAdd_reg[21]' (FDC) to 'U0/InstCh1DAC_Calibration/cCoefAdd_reg[22]'
+INFO: [Synth 8-3886] merging instance 'U0/InstCh1DAC_Calibration/cCoefAdd_reg[22]' (FDC) to 'U0/InstCh1DAC_Calibration/cCoefAdd_reg[23]'
+INFO: [Synth 8-3886] merging instance 'U0/InstCh1DAC_Calibration/cCoefAdd_reg[23]' (FDC) to 'U0/InstCh1DAC_Calibration/cCoefAdd_reg[24]'
+INFO: [Synth 8-3886] merging instance 'U0/InstCh1DAC_Calibration/cCoefAdd_reg[24]' (FDC) to 'U0/InstCh1DAC_Calibration/cCoefAdd_reg[25]'
+INFO: [Synth 8-3886] merging instance 'U0/InstCh1DAC_Calibration/cCoefAdd_reg[25]' (FDC) to 'U0/InstCh1DAC_Calibration/cCoefAdd_reg[26]'
+INFO: [Synth 8-3886] merging instance 'U0/InstCh1DAC_Calibration/cCoefAdd_reg[26]' (FDC) to 'U0/InstCh1DAC_Calibration/cCoefAdd_reg[27]'
+INFO: [Synth 8-3886] merging instance 'U0/InstCh1DAC_Calibration/cCoefAdd_reg[27]' (FDC) to 'U0/InstCh1DAC_Calibration/cCoefAdd_reg[28]'
+INFO: [Synth 8-3886] merging instance 'U0/InstCh1DAC_Calibration/cCoefAdd_reg[28]' (FDC) to 'U0/InstCh1DAC_Calibration/cCoefAdd_reg[29]'
+INFO: [Synth 8-3886] merging instance 'U0/InstCh1DAC_Calibration/cCoefAdd_reg[29]' (FDC) to 'U0/InstCh1DAC_Calibration/cCoefAdd_reg[30]'
+INFO: [Synth 8-3886] merging instance 'U0/InstCh1DAC_Calibration/cCoefAdd_reg[30]' (FDC) to 'U0/InstCh1DAC_Calibration/cCoefAdd_reg[31]'
+INFO: [Synth 8-3886] merging instance 'U0/InstCh1DAC_Calibration/cCoefAdd_reg[31]' (FDC) to 'U0/InstCh1DAC_Calibration/cCoefAdd_reg[32]'
+INFO: [Synth 8-3886] merging instance 'U0/InstCh1DAC_Calibration/cCoefAdd_reg[32]' (FDC) to 'U0/InstCh1DAC_Calibration/cCoefAdd_reg[33]'
+INFO: [Synth 8-3886] merging instance 'U0/InstCh1DAC_Calibration/cCoefAdd_reg[33]' (FDC) to 'U0/InstCh1DAC_Calibration/cCoefAdd_reg[34]'
+INFO: [Synth 8-3886] merging instance 'U0/InstCh1DAC_Calibration/cCoefAdd_reg[34]' (FDC) to 'U0/InstCh1DAC_Calibration/cCoefAdd_reg[35]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\InstCh1DAC_Calibration/cCoefAdd_reg[35] )
+INFO: [Synth 8-3886] merging instance 'U0/InstConfigDAC/sCmdRxAxisTdata_reg[8]' (FDC) to 'U0/InstConfigDAC/sCmdRxAxisTdata_reg[9]'
+INFO: [Synth 8-3886] merging instance 'U0/InstConfigDAC/sCmdRxAxisTdata_reg[9]' (FDC) to 'U0/InstConfigDAC/sCmdRxAxisTdata_reg[10]'
+INFO: [Synth 8-3886] merging instance 'U0/InstConfigDAC/sCmdRxAxisTdata_reg[10]' (FDC) to 'U0/InstConfigDAC/sCmdRxAxisTdata_reg[11]'
+INFO: [Synth 8-3886] merging instance 'U0/InstConfigDAC/sCmdRxAxisTdata_reg[11]' (FDC) to 'U0/InstConfigDAC/sCmdRxAxisTdata_reg[12]'
+INFO: [Synth 8-3886] merging instance 'U0/InstConfigDAC/sCmdRxAxisTdata_reg[12]' (FDC) to 'U0/InstConfigDAC/sCmdRxAxisTdata_reg[13]'
+INFO: [Synth 8-3886] merging instance 'U0/InstConfigDAC/sCmdRxAxisTdata_reg[13]' (FDC) to 'U0/InstConfigDAC/sCmdRxAxisTdata_reg[14]'
+INFO: [Synth 8-3886] merging instance 'U0/InstConfigDAC/sCmdRxAxisTdata_reg[14]' (FDC) to 'U0/InstConfigDAC/sCmdRxAxisTdata_reg[15]'
+INFO: [Synth 8-3886] merging instance 'U0/InstConfigDAC/sCmdRxAxisTdata_reg[15]' (FDC) to 'U0/InstConfigDAC/sCmdRxAxisTdata_reg[16]'
+INFO: [Synth 8-3886] merging instance 'U0/InstConfigDAC/sCmdRxAxisTdata_reg[16]' (FDC) to 'U0/InstConfigDAC/sCmdRxAxisTdata_reg[17]'
+INFO: [Synth 8-3886] merging instance 'U0/InstConfigDAC/sCmdRxAxisTdata_reg[17]' (FDC) to 'U0/InstConfigDAC/sCmdRxAxisTdata_reg[18]'
+INFO: [Synth 8-3886] merging instance 'U0/InstConfigDAC/sCmdRxAxisTdata_reg[18]' (FDC) to 'U0/InstConfigDAC/sCmdRxAxisTdata_reg[19]'
+INFO: [Synth 8-3886] merging instance 'U0/InstConfigDAC/sCmdRxAxisTdata_reg[19]' (FDC) to 'U0/InstConfigDAC/sCmdRxAxisTdata_reg[20]'
+INFO: [Synth 8-3886] merging instance 'U0/InstConfigDAC/sCmdRxAxisTdata_reg[20]' (FDC) to 'U0/InstConfigDAC/sCmdRxAxisTdata_reg[21]'
+INFO: [Synth 8-3886] merging instance 'U0/InstConfigDAC/sCmdRxAxisTdata_reg[21]' (FDC) to 'U0/InstConfigDAC/sCmdRxAxisTdata_reg[22]'
+INFO: [Synth 8-3886] merging instance 'U0/InstConfigDAC/sCmdRxAxisTdata_reg[22]' (FDC) to 'U0/InstConfigDAC/sCmdRxAxisTdata_reg[23]'
+INFO: [Synth 8-3886] merging instance 'U0/InstConfigDAC/sCmdRxAxisTdata_reg[23]' (FDC) to 'U0/InstConfigDAC/sCmdRxAxisTdata_reg[24]'
+INFO: [Synth 8-3886] merging instance 'U0/InstConfigDAC/sCmdRxAxisTdata_reg[24]' (FDC) to 'U0/InstConfigDAC/sCmdRxAxisTdata_reg[25]'
+INFO: [Synth 8-3886] merging instance 'U0/InstConfigDAC/sCmdRxAxisTdata_reg[25]' (FDC) to 'U0/InstConfigDAC/sCmdRxAxisTdata_reg[26]'
+INFO: [Synth 8-3886] merging instance 'U0/InstConfigDAC/sCmdRxAxisTdata_reg[26]' (FDC) to 'U0/InstConfigDAC/sCmdRxAxisTdata_reg[27]'
+INFO: [Synth 8-3886] merging instance 'U0/InstConfigDAC/sCmdRxAxisTdata_reg[27]' (FDC) to 'U0/InstConfigDAC/sCmdRxAxisTdata_reg[28]'
+INFO: [Synth 8-3886] merging instance 'U0/InstConfigDAC/sCmdRxAxisTdata_reg[28]' (FDC) to 'U0/InstConfigDAC/sCmdRxAxisTdata_reg[29]'
+INFO: [Synth 8-3886] merging instance 'U0/InstConfigDAC/sCmdRxAxisTdata_reg[29]' (FDC) to 'U0/InstConfigDAC/sCmdRxAxisTdata_reg[30]'
+INFO: [Synth 8-3886] merging instance 'U0/InstConfigDAC/sCmdRxAxisTdata_reg[30]' (FDC) to 'U0/InstConfigDAC/sCmdRxAxisTdata_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\InstConfigDAC/sCmdRxAxisTdata_reg[31] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1062.285 ; gain = 373.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping  Report (see note below)
++----------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name     | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++----------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|GainOffsetCalib | A*B         | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|GainOffsetCalib | A*B         | 18     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++----------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1070.465 ; gain = 381.805
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1091.207 ; gain = 402.547
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.srcs/sources_1/bd/design_1/ipshared/f80f/src/GainOffsetCalib.vhd:202]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.srcs/sources_1/bd/design_1/ipshared/f80f/src/GainOffsetCalib.vhd:202]
+INFO: [Synth 8-3886] merging instance 'U0/i_590' (FDC) to 'U0/i_573'
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 1093.793 ; gain = 405.133
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1099.574 ; gain = 410.914
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1099.574 ; gain = 410.914
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1099.574 ; gain = 410.914
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1099.574 ; gain = 410.914
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1099.574 ; gain = 410.914
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1099.574 ; gain = 410.914
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |CARRY4  |     6|
+|2     |DSP48E1 |     2|
+|3     |LUT1    |     6|
+|4     |LUT2    |    15|
+|5     |LUT3    |    17|
+|6     |LUT4    |    50|
+|7     |LUT5    |    56|
+|8     |LUT6    |    74|
+|9     |ODDR    |    16|
+|10    |FDCE    |   194|
+|11    |FDPE    |     3|
+|12    |IOBUF   |     1|
+|13    |OBUF    |     2|
++------+--------+------+
+
+Report Instance Areas: 
++------+-------------------------------+------------------------+------+
+|      |Instance                       |Module                  |Cells |
++------+-------------------------------+------------------------+------+
+|1     |top                            |                        |   442|
+|2     |  U0                           |ZmodAWG_1411_Controller |   442|
+|3     |    InstDacSysReset            |ResetBridge__1          |     3|
+|4     |      \OutputFF_No.SyncAsyncx  |SyncAsync__4            |     2|
+|5     |    InstDacSamplingReset       |ResetBridge__2          |     3|
+|6     |      \OutputFF_No.SyncAsyncx  |SyncAsync__5            |     2|
+|7     |    InstDacClkReset            |ResetBridge             |     3|
+|8     |      \OutputFF_No.SyncAsyncx  |SyncAsync__1            |     2|
+|9     |    InstDacCh1ScaleSync        |SyncBase__1             |     3|
+|10    |      SyncAsyncx               |SyncAsync__2            |     2|
+|11    |    InstDacCh2ScaleSync        |SyncBase__2             |     3|
+|12    |      SyncAsyncx               |SyncAsync__3            |     2|
+|13    |    InstDacTestModeSync        |SyncBase                |     3|
+|14    |      SyncAsyncx               |SyncAsync               |     2|
+|15    |    InstCh1DAC_Calibration     |GainOffsetCalib         |    35|
+|16    |    InstCh2DAC_Calibration     |GainOffsetCalib_0       |    34|
+|17    |    InstConfigDAC              |ConfigDAC               |   305|
+|18    |      DAC_SPI_inst             |ADI_SPI                 |   157|
++------+-------------------------------+------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1099.574 ; gain = 410.914
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 158 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:20 . Memory (MB): peak = 1099.574 ; gain = 281.934
+Synthesis Optimization Complete : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1099.574 ; gain = 410.914
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 25 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1099.574 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 1 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+148 Infos, 103 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:27 . Memory (MB): peak = 1099.574 ; gain = 678.152
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1099.574 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.runs/design_1_ZmodAWGController_0_3_synth_1/design_1_ZmodAWGController_0_3.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_ZmodAWGController_0_3, cache-ID = e967917e386a586b
+INFO: [Coretcl 2-1174] Renamed 17 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1099.574 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.runs/design_1_ZmodAWGController_0_3_synth_1/design_1_ZmodAWGController_0_3.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_ZmodAWGController_0_3_utilization_synth.rpt -pb design_1_ZmodAWGController_0_3_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri May  5 16:48:29 2023...

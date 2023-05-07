@@ -1,0 +1,19 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Fri May  5 17:17:05 2023
+# Process ID: 15560
+# Current directory: C:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.runs/design_1_clk_wiz_0_0_synth_1
+# Command line: vivado.exe -log design_1_clk_wiz_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_clk_wiz_0_0.tcl
+# Log file: C:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.runs/design_1_clk_wiz_0_0_synth_1/design_1_clk_wiz_0_0.vds
+# Journal file: C:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.runs/design_1_clk_wiz_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source design_1_clk_wiz_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: see 'xilinx:packagingInfo' : Bad end of element
+CRITICAL WARNING: [IP_Flow 19-1977] Unable to read IP file c:/Users/Takuya/Documents/GitHub/vivado-library/ip/Zmods/ZmodDigitizerController/component.xml. This IP will not be included in the IP Catalog.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Takuya/Documents/GitHub/vivado-library'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP design_1_clk_wiz_0_0, cache-ID = 056756c83ea1dd30.
+INFO: [Common 17-206] Exiting Vivado at Fri May  5 17:17:11 2023...

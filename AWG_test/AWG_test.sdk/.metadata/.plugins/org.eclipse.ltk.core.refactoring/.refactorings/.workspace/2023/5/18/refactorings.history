@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;AWG_test_PS&apos;" deleteContents="true" description="Delete resource &apos;AWG_test_PS&apos;" element1="/AWG_test_PS" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1683335158933"/>&#x0A;<refactoring comment="Delete 3 resources" deleteContents="true" description="Delete 3 resources" element1="/AWG_test_PS_bsp" element2="/design_1_wrapper_hw_platform_0" element3="/ZC702_hw_platform" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="3" stamp="1683335171388"/>
+</session>
