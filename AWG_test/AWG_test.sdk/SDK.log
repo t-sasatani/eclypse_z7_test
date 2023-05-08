@@ -479,3 +479,10 @@ con
 
 02:01:52 INFO  : Launch script is exported to file 'C:\Users\Takuya\Documents\GitHub\eclypse_z7_test\AWG_test\AWG_test.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_awg_test_ps.elf_on_local.tcl'
 02:52:24 INFO  : Disconnected from the channel tcfchan#3.
+05:22:15 INFO  : Registering command handlers for SDK TCF services
+05:22:15 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\Takuya\Documents\GitHub\eclypse_z7_test\AWG_test\AWG_test.sdk\temp_xsdb_launch_script.tcl
+05:22:17 INFO  : XSCT server has started successfully.
+05:22:17 INFO  : Successfully done setting XSCT server connection channel  
+05:22:17 INFO  : Successfully done setting SDK workspace  
+05:22:17 INFO  : Processing command line option -hwspec C:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.sdk/design_1_wrapper.hdf.
+05:22:17 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
