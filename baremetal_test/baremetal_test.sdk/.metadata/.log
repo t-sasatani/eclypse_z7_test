@@ -4697,3 +4697,43 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data C:/Users/Takuya/
 
 !ENTRY com.xilinx.sdk.utils 0 0 2023-05-05 13:50:37.627
 !MESSAGE XSCT command with result: [::hsi::utils::openhw C:/Users/Takuya/Documents/GitHub/eclypse_z7_test/baremetal_test/baremetal_test.sdk/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: Worker-4
+!SESSION 2023-05-08 02:03:14.472 -----------------------------------------------
+eclipse.buildId=2019.1
+java.version=1.8.0_112
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data C:/Users/Takuya/Documents/GitHub/eclypse_z7_test/baremetal_test/baremetal_test.sdk
+
+!ENTRY org.eclipse.ui 2 0 2023-05-08 02:03:15.827
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2023-05-08 02:03:15.827
+!MESSAGE Commands should really have a category: plug-in='com.xilinx.sdk.appwiz', id='com.xilinx.sdk.app.commands.ChangeAtfBuiltReferences', categoryId='com.xilinx.sdk.app.commands.category'
+
+!ENTRY org.eclipse.ui 2 0 2023-05-08 02:03:16.327
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2023-05-08 02:03:16.327
+!MESSAGE Commands should really have a category: plug-in='com.xilinx.sdk.appwiz', id='com.xilinx.sdk.app.commands.ChangeAtfBuiltReferences', categoryId='com.xilinx.sdk.app.commands.category'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-05-08 02:03:21.827
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-05-08 02:03:21.827
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-05-08 02:03:21.946
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-05-08 02:03:21.947
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-05-08 02:03:21.948
+!MESSAGE XSCT Command: [setws C:/Users/Takuya/Documents/GitHub/eclypse_z7_test/baremetal_test/baremetal_test.sdk], Thread: Thread-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-05-08 02:03:21.949
+!MESSAGE XSCT command with result: [setws C:/Users/Takuya/Documents/GitHub/eclypse_z7_test/baremetal_test/baremetal_test.sdk], Result: [null, ]. Thread: Thread-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-05-08 02:03:21.974
+!MESSAGE XSCT Command: [::hsi::utils::openhw C:/Users/Takuya/Documents/GitHub/eclypse_z7_test/baremetal_test/baremetal_test.sdk/design_1_wrapper_hw_platform_0/system.hdf], Thread: Worker-4
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-05-08 02:03:24.678
+!MESSAGE XSCT command with result: [::hsi::utils::openhw C:/Users/Takuya/Documents/GitHub/eclypse_z7_test/baremetal_test/baremetal_test.sdk/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: Worker-4

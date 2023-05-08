@@ -337,3 +337,145 @@ con
 
 18:54:53 INFO  : Launch script is exported to file 'C:\Users\Takuya\Documents\GitHub\eclypse_z7_test\AWG_test\AWG_test.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_awg_test_ps.elf_on_local.tcl'
 22:08:45 INFO  : Disconnected from the channel tcfchan#2.
+01:35:36 INFO  : Registering command handlers for SDK TCF services
+01:35:37 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\Takuya\Documents\GitHub\eclypse_z7_test\AWG_test\AWG_test.sdk\temp_xsdb_launch_script.tcl
+01:35:39 INFO  : XSCT server has started successfully.
+01:35:41 INFO  : Successfully done setting XSCT server connection channel  
+01:35:41 INFO  : Successfully done setting SDK workspace  
+01:35:41 INFO  : Processing command line option -hwspec C:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.sdk/design_1_wrapper.hdf.
+01:35:41 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+01:35:49 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Eclypse Z7 210393AD7640A" && level==0} -index 1' command is executed.
+01:35:49 INFO  : 'fpga -state' command is executed.
+01:35:49 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:35:49 INFO  : Jtag cable 'Digilent Eclypse Z7 210393AD7640A' is selected.
+01:35:49 INFO  : 'jtag frequency' command is executed.
+01:35:49 INFO  : Sourcing of 'C:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+01:35:49 INFO  : Context for 'APU' is selected.
+01:35:49 INFO  : Hardware design information is loaded from 'C:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+01:35:49 INFO  : 'configparams force-mem-access 1' command is executed.
+01:35:49 INFO  : Context for 'APU' is selected.
+01:35:49 INFO  : 'stop' command is executed.
+01:35:50 INFO  : 'ps7_init' command is executed.
+01:35:50 INFO  : 'ps7_post_config' command is executed.
+01:35:50 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:35:50 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+01:35:50 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:35:50 INFO  : The application 'C:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.sdk/AWG_TEST_PS/Debug/AWG_TEST_PS.elf' is downloaded to processor 'ps7_cortexa9_0'.
+01:35:50 INFO  : 'configparams force-mem-access 0' command is executed.
+01:35:50 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Eclypse Z7 210393AD7640A"} -index 0
+loadhw -hw C:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Eclypse Z7 210393AD7640A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Eclypse Z7 210393AD7640A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Eclypse Z7 210393AD7640A"} -index 0
+dow C:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.sdk/AWG_TEST_PS/Debug/AWG_TEST_PS.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+01:35:50 INFO  : Memory regions updated for context APU
+01:35:50 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:35:50 INFO  : 'con' command is executed.
+01:35:50 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Eclypse Z7 210393AD7640A"} -index 0
+con
+----------------End of Script----------------
+
+01:35:50 INFO  : Launch script is exported to file 'C:\Users\Takuya\Documents\GitHub\eclypse_z7_test\AWG_test\AWG_test.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_awg_test_ps.elf_on_local.tcl'
+01:57:48 INFO  : Disconnected from the channel tcfchan#1.
+01:57:52 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Eclypse Z7 210393AD7640A" && level==0} -index 1' command is executed.
+01:57:52 INFO  : 'fpga -state' command is executed.
+01:57:52 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:58:10 INFO  : Jtag cable 'Digilent Eclypse Z7 210393AD7640A' is selected.
+01:58:10 INFO  : 'jtag frequency' command is executed.
+01:58:10 INFO  : Sourcing of 'C:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+01:58:10 INFO  : Context for 'APU' is selected.
+01:58:11 INFO  : Hardware design information is loaded from 'C:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+01:58:11 INFO  : 'configparams force-mem-access 1' command is executed.
+01:58:11 INFO  : Context for 'APU' is selected.
+01:58:11 INFO  : 'stop' command is executed.
+01:58:12 INFO  : 'ps7_init' command is executed.
+01:58:12 INFO  : 'ps7_post_config' command is executed.
+01:58:12 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:58:12 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+01:58:12 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:58:12 INFO  : The application 'C:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.sdk/AWG_TEST_PS/Debug/AWG_TEST_PS.elf' is downloaded to processor 'ps7_cortexa9_0'.
+01:58:12 INFO  : 'configparams force-mem-access 0' command is executed.
+01:58:12 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Eclypse Z7 210393AD7640A"} -index 0
+loadhw -hw C:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Eclypse Z7 210393AD7640A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Eclypse Z7 210393AD7640A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Eclypse Z7 210393AD7640A"} -index 0
+dow C:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.sdk/AWG_TEST_PS/Debug/AWG_TEST_PS.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+01:58:12 INFO  : Memory regions updated for context APU
+01:58:12 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:58:12 INFO  : 'con' command is executed.
+01:58:12 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Eclypse Z7 210393AD7640A"} -index 0
+con
+----------------End of Script----------------
+
+01:58:12 INFO  : Launch script is exported to file 'C:\Users\Takuya\Documents\GitHub\eclypse_z7_test\AWG_test\AWG_test.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_awg_test_ps.elf_on_local.tcl'
+02:01:27 INFO  : Disconnected from the channel tcfchan#2.
+02:01:31 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Eclypse Z7 210393AD7640A" && level==0} -index 1' command is executed.
+02:01:31 INFO  : 'fpga -state' command is executed.
+02:01:31 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+02:01:49 INFO  : Jtag cable 'Digilent Eclypse Z7 210393AD7640A' is selected.
+02:01:49 INFO  : 'jtag frequency' command is executed.
+02:01:49 INFO  : Sourcing of 'C:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+02:01:49 INFO  : Context for 'APU' is selected.
+02:01:51 INFO  : Hardware design information is loaded from 'C:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+02:01:51 INFO  : 'configparams force-mem-access 1' command is executed.
+02:01:51 INFO  : Context for 'APU' is selected.
+02:01:51 INFO  : 'stop' command is executed.
+02:01:52 INFO  : 'ps7_init' command is executed.
+02:01:52 INFO  : 'ps7_post_config' command is executed.
+02:01:52 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:01:52 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+02:01:52 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:01:52 INFO  : The application 'C:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.sdk/AWG_TEST_PS/Debug/AWG_TEST_PS.elf' is downloaded to processor 'ps7_cortexa9_0'.
+02:01:52 INFO  : 'configparams force-mem-access 0' command is executed.
+02:01:52 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Eclypse Z7 210393AD7640A"} -index 0
+loadhw -hw C:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Eclypse Z7 210393AD7640A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Eclypse Z7 210393AD7640A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Eclypse Z7 210393AD7640A"} -index 0
+dow C:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.sdk/AWG_TEST_PS/Debug/AWG_TEST_PS.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+02:01:52 INFO  : Memory regions updated for context APU
+02:01:52 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:01:52 INFO  : 'con' command is executed.
+02:01:52 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Eclypse Z7 210393AD7640A"} -index 0
+con
+----------------End of Script----------------
+
+02:01:52 INFO  : Launch script is exported to file 'C:\Users\Takuya\Documents\GitHub\eclypse_z7_test\AWG_test\AWG_test.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_awg_test_ps.elf_on_local.tcl'
+02:52:24 INFO  : Disconnected from the channel tcfchan#3.

@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date         : Fri May  5 18:47:25 2023
+| Date         : Mon May  8 02:51:00 2023
 | Host         : DESKTOP-1P4LGSG running 64-bit major release  (build 9200)
 | Command      : report_methodology -file design_1_wrapper_methodology_drc_routed.rpt -pb design_1_wrapper_methodology_drc_routed.pb -rpx design_1_wrapper_methodology_drc_routed.rpx
 | Design       : design_1_wrapper
@@ -23,7 +23,7 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 151
+             Violations found: 157
 +-----------+------------------+------------------------------------------------------------------+------------+
 | Rule      | Severity         | Description                                                      | Violations |
 +-----------+------------------+------------------------------------------------------------------+------------+
@@ -35,7 +35,7 @@ Table of Contents
 | DPIR-1    | Warning          | Asynchronous driver check                                        | 52         |
 | LUTAR-1   | Warning          | LUT drives async reset alert                                     | 4          |
 | TIMING-16 | Warning          | Large setup violation                                            | 64         |
-| TIMING-18 | Warning          | Missing input or output delay                                    | 4          |
+| TIMING-18 | Warning          | Missing input or output delay                                    | 10         |
 | XDCB-5    | Warning          | Runtime inefficient way to find pin objects                      | 18         |
 | XDCC-1    | Warning          | Scoped Clock constraint overwritten with the same name           | 2          |
 +-----------+------------------+------------------------------------------------------------------+------------+
@@ -359,464 +359,494 @@ Related violations: <none>
 
 TIMING-16#1 Warning
 Large setup violation  
-There is a large setup violation of -1.982 ns between design_1_i/axi_gpio_0/U0/gpio_core_1/Dual.gpio2_Data_Out_reg[5]/C (clocked by clk_fpga_0) and design_1_i/mult_gen_0/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[0][1]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -2.272 ns between design_1_i/axi_gpio_0/U0/gpio_core_1/Dual.gpio2_Data_Out_reg[5]/C (clocked by clk_fpga_0) and design_1_i/mult_gen_0/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[0][1]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#2 Warning
 Large setup violation  
-There is a large setup violation of -2.159 ns between design_1_i/axi_gpio_0/U0/gpio_core_1/Dual.gpio2_Data_Out_reg[5]/C (clocked by clk_fpga_0) and design_1_i/mult_gen_0/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[0][2]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -2.328 ns between design_1_i/axi_gpio_0/U0/gpio_core_1/Dual.gpio2_Data_Out_reg[5]/C (clocked by clk_fpga_0) and design_1_i/mult_gen_0/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[0][2]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#3 Warning
 Large setup violation  
-There is a large setup violation of -2.336 ns between design_1_i/axi_gpio_0/U0/gpio_core_1/Dual.gpio2_Data_Out_reg[5]/C (clocked by clk_fpga_0) and design_1_i/mult_gen_0/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[0][3]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -3.664 ns between design_1_i/axi_gpio_0/U0/gpio_core_1/Dual.gpio2_Data_Out_reg[5]/C (clocked by clk_fpga_0) and design_1_i/mult_gen_0/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[0][3]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#4 Warning
 Large setup violation  
-There is a large setup violation of -4.010 ns between design_1_i/axi_gpio_0/U0/gpio_core_1/Dual.gpio2_Data_Out_reg[5]/C (clocked by clk_fpga_0) and design_1_i/mult_gen_0/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[0][4]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -4.417 ns between design_1_i/axi_gpio_0/U0/gpio_core_1/Dual.gpio2_Data_Out_reg[5]/C (clocked by clk_fpga_0) and design_1_i/mult_gen_0/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[0][7]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#5 Warning
 Large setup violation  
-There is a large setup violation of -5.323 ns between design_1_i/axi_gpio_0/U0/gpio_core_1/Dual.gpio2_Data_Out_reg[5]/C (clocked by clk_fpga_0) and design_1_i/mult_gen_0/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[0][5]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -4.684 ns between design_1_i/axi_gpio_0/U0/gpio_core_1/Dual.gpio2_Data_Out_reg[5]/C (clocked by clk_fpga_0) and design_1_i/mult_gen_0/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[0][10]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#6 Warning
 Large setup violation  
-There is a large setup violation of -5.464 ns between design_1_i/axi_gpio_0/U0/gpio_core_1/Dual.gpio2_Data_Out_reg[5]/C (clocked by clk_fpga_0) and design_1_i/mult_gen_0/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[0][7]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -5.016 ns between design_1_i/axi_gpio_0/U0/gpio_core_1/Dual.gpio2_Data_Out_reg[5]/C (clocked by clk_fpga_0) and design_1_i/mult_gen_0/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[0][4]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#7 Warning
 Large setup violation  
-There is a large setup violation of -5.594 ns between design_1_i/axi_gpio_0/U0/gpio_core_1/Dual.gpio2_Data_Out_reg[5]/C (clocked by clk_fpga_0) and design_1_i/mult_gen_0/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[0][6]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -5.111 ns between design_1_i/axi_gpio_0/U0/gpio_core_1/Dual.gpio2_Data_Out_reg[5]/C (clocked by clk_fpga_0) and design_1_i/mult_gen_0/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[0][5]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#8 Warning
 Large setup violation  
-There is a large setup violation of -5.622 ns between design_1_i/axi_gpio_0/U0/gpio_core_1/Dual.gpio2_Data_Out_reg[5]/C (clocked by clk_fpga_0) and design_1_i/mult_gen_0/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[0][8]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -5.292 ns between design_1_i/axi_gpio_0/U0/gpio_core_1/Dual.gpio2_Data_Out_reg[5]/C (clocked by clk_fpga_0) and design_1_i/mult_gen_0/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[0][6]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#9 Warning
 Large setup violation  
-There is a large setup violation of -5.656 ns between design_1_i/axi_gpio_0/U0/gpio_core_1/Dual.gpio2_Data_Out_reg[5]/C (clocked by clk_fpga_0) and design_1_i/mult_gen_0/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[0][10]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -5.836 ns between design_1_i/axi_gpio_0/U0/gpio_core_1/Dual.gpio2_Data_Out_reg[5]/C (clocked by clk_fpga_0) and design_1_i/mult_gen_0/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[0][11]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#10 Warning
 Large setup violation  
-There is a large setup violation of -5.795 ns between design_1_i/axi_gpio_0/U0/gpio_core_1/Dual.gpio2_Data_Out_reg[5]/C (clocked by clk_fpga_0) and design_1_i/mult_gen_0/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[0][12]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -5.854 ns between design_1_i/axi_gpio_0/U0/gpio_core_1/Dual.gpio2_Data_Out_reg[5]/C (clocked by clk_fpga_0) and design_1_i/mult_gen_0/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[0][12]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#11 Warning
 Large setup violation  
-There is a large setup violation of -5.809 ns between design_1_i/axi_gpio_0/U0/gpio_core_1/Dual.gpio2_Data_Out_reg[5]/C (clocked by clk_fpga_0) and design_1_i/mult_gen_0/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[0][11]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -5.896 ns between design_1_i/axi_gpio_0/U0/gpio_core_1/Dual.gpio2_Data_Out_reg[5]/C (clocked by clk_fpga_0) and design_1_i/mult_gen_0/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[0][8]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#12 Warning
 Large setup violation  
-There is a large setup violation of -6.036 ns between design_1_i/axi_gpio_0/U0/gpio_core_1/Dual.gpio2_Data_Out_reg[5]/C (clocked by clk_fpga_0) and design_1_i/mult_gen_0/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[0][9]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -5.945 ns between design_1_i/axi_gpio_0/U0/gpio_core_1/Dual.gpio2_Data_Out_reg[5]/C (clocked by clk_fpga_0) and design_1_i/mult_gen_0/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[0][9]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#13 Warning
 Large setup violation  
-There is a large setup violation of -6.380 ns between design_1_i/mult_gen_0/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[0][11]/C (clocked by sys_clk_pin) and design_1_i/ZmodAWGController_1/U0/cCh2In_reg[11]/D (clocked by clk_100_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -6.237 ns between design_1_i/mult_gen_0/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[0][9]/C (clocked by sys_clk_pin) and design_1_i/ZmodAWGController_1/U0/cCh2In_reg[9]/D (clocked by clk_100_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#14 Warning
 Large setup violation  
-There is a large setup violation of -6.383 ns between design_1_i/mult_gen_0/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[0][11]/C (clocked by sys_clk_pin) and design_1_i/ZmodAWGController_0/U0/cCh1In_reg[11]/D (clocked by clk_100_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -6.241 ns between design_1_i/mult_gen_0/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[0][9]/C (clocked by sys_clk_pin) and design_1_i/ZmodAWGController_1/U0/cCh1In_reg[9]/D (clocked by clk_100_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#15 Warning
 Large setup violation  
-There is a large setup violation of -6.392 ns between design_1_i/mult_gen_0/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[0][11]/C (clocked by sys_clk_pin) and design_1_i/ZmodAWGController_1/U0/cCh1In_reg[11]/D (clocked by clk_100_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -6.373 ns between design_1_i/mult_gen_0/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[0][10]/C (clocked by sys_clk_pin) and design_1_i/ZmodAWGController_0/U0/cCh1In_reg[10]/D (clocked by clk_100_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#16 Warning
 Large setup violation  
-There is a large setup violation of -6.395 ns between design_1_i/mult_gen_0/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[0][11]/C (clocked by sys_clk_pin) and design_1_i/ZmodAWGController_0/U0/cCh2In_reg[11]/D (clocked by clk_100_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -6.381 ns between design_1_i/mult_gen_0/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[0][2]/C (clocked by sys_clk_pin) and design_1_i/ZmodAWGController_1/U0/cCh2In_reg[2]/D (clocked by clk_100_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#17 Warning
 Large setup violation  
-There is a large setup violation of -6.439 ns between design_1_i/mult_gen_0/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[0][2]/C (clocked by sys_clk_pin) and design_1_i/ZmodAWGController_0/U0/cCh1In_reg[2]/D (clocked by clk_100_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -6.383 ns between design_1_i/mult_gen_0/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[0][3]/C (clocked by sys_clk_pin) and design_1_i/ZmodAWGController_0/U0/cCh1In_reg[3]/D (clocked by clk_100_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#18 Warning
 Large setup violation  
-There is a large setup violation of -6.444 ns between design_1_i/mult_gen_0/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[0][9]/C (clocked by sys_clk_pin) and design_1_i/ZmodAWGController_1/U0/cCh1In_reg[9]/D (clocked by clk_100_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -6.387 ns between design_1_i/mult_gen_0/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[0][2]/C (clocked by sys_clk_pin) and design_1_i/ZmodAWGController_0/U0/cCh2In_reg[2]/D (clocked by clk_100_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#19 Warning
 Large setup violation  
-There is a large setup violation of -6.447 ns between design_1_i/mult_gen_0/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[0][8]/C (clocked by sys_clk_pin) and design_1_i/ZmodAWGController_1/U0/cCh2In_reg[8]/D (clocked by clk_100_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -6.390 ns between design_1_i/mult_gen_0/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[0][9]/C (clocked by sys_clk_pin) and design_1_i/ZmodAWGController_0/U0/cCh1In_reg[9]/D (clocked by clk_100_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#20 Warning
 Large setup violation  
-There is a large setup violation of -6.458 ns between design_1_i/mult_gen_0/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[0][5]/C (clocked by sys_clk_pin) and design_1_i/ZmodAWGController_0/U0/cCh1In_reg[5]/D (clocked by clk_100_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -6.396 ns between design_1_i/mult_gen_0/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[0][9]/C (clocked by sys_clk_pin) and design_1_i/ZmodAWGController_0/U0/cCh2In_reg[9]/D (clocked by clk_100_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#21 Warning
 Large setup violation  
-There is a large setup violation of -6.461 ns between design_1_i/mult_gen_0/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[0][3]/C (clocked by sys_clk_pin) and design_1_i/ZmodAWGController_0/U0/cCh1In_reg[3]/D (clocked by clk_100_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -6.409 ns between design_1_i/mult_gen_0/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[0][3]/C (clocked by sys_clk_pin) and design_1_i/ZmodAWGController_1/U0/cCh1In_reg[3]/D (clocked by clk_100_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#22 Warning
 Large setup violation  
-There is a large setup violation of -6.461 ns between design_1_i/mult_gen_0/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[0][8]/C (clocked by sys_clk_pin) and design_1_i/ZmodAWGController_0/U0/cCh2In_reg[8]/D (clocked by clk_100_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -6.413 ns between design_1_i/mult_gen_0/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[0][1]/C (clocked by sys_clk_pin) and design_1_i/ZmodAWGController_0/U0/cCh1In_reg[1]/D (clocked by clk_100_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#23 Warning
 Large setup violation  
-There is a large setup violation of -6.461 ns between design_1_i/mult_gen_0/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[0][9]/C (clocked by sys_clk_pin) and design_1_i/ZmodAWGController_0/U0/cCh2In_reg[9]/D (clocked by clk_100_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -6.415 ns between design_1_i/mult_gen_0/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[0][3]/C (clocked by sys_clk_pin) and design_1_i/ZmodAWGController_0/U0/cCh2In_reg[3]/D (clocked by clk_100_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#24 Warning
 Large setup violation  
-There is a large setup violation of -6.462 ns between design_1_i/mult_gen_0/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[0][2]/C (clocked by sys_clk_pin) and design_1_i/ZmodAWGController_0/U0/cCh2In_reg[2]/D (clocked by clk_100_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -6.419 ns between design_1_i/mult_gen_0/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[0][1]/C (clocked by sys_clk_pin) and design_1_i/ZmodAWGController_1/U0/cCh2In_reg[1]/D (clocked by clk_100_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#25 Warning
 Large setup violation  
-There is a large setup violation of -6.469 ns between design_1_i/mult_gen_0/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[0][10]/C (clocked by sys_clk_pin) and design_1_i/ZmodAWGController_1/U0/cCh1In_reg[10]/D (clocked by clk_100_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -6.421 ns between design_1_i/mult_gen_0/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[0][3]/C (clocked by sys_clk_pin) and design_1_i/ZmodAWGController_1/U0/cCh2In_reg[3]/D (clocked by clk_100_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#26 Warning
 Large setup violation  
-There is a large setup violation of -6.471 ns between design_1_i/mult_gen_0/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[0][6]/C (clocked by sys_clk_pin) and design_1_i/ZmodAWGController_0/U0/cCh2In_reg[6]/D (clocked by clk_100_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -6.430 ns between design_1_i/mult_gen_0/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[0][1]/C (clocked by sys_clk_pin) and design_1_i/ZmodAWGController_1/U0/cCh1In_reg[1]/D (clocked by clk_100_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#27 Warning
 Large setup violation  
-There is a large setup violation of -6.473 ns between design_1_i/mult_gen_0/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[0][3]/C (clocked by sys_clk_pin) and design_1_i/ZmodAWGController_0/U0/cCh2In_reg[3]/D (clocked by clk_100_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -6.443 ns between design_1_i/mult_gen_0/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[0][12]/C (clocked by sys_clk_pin) and design_1_i/ZmodAWGController_0/U0/cCh2In_reg[12]/D (clocked by clk_100_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#28 Warning
 Large setup violation  
-There is a large setup violation of -6.475 ns between design_1_i/mult_gen_0/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[0][9]/C (clocked by sys_clk_pin) and design_1_i/ZmodAWGController_0/U0/cCh1In_reg[9]/D (clocked by clk_100_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -6.450 ns between design_1_i/mult_gen_0/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[0][7]/C (clocked by sys_clk_pin) and design_1_i/ZmodAWGController_0/U0/cCh1In_reg[7]/D (clocked by clk_100_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#29 Warning
 Large setup violation  
-There is a large setup violation of -6.480 ns between design_1_i/mult_gen_0/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[0][9]/C (clocked by sys_clk_pin) and design_1_i/ZmodAWGController_1/U0/cCh2In_reg[9]/D (clocked by clk_100_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -6.453 ns between design_1_i/mult_gen_0/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[0][5]/C (clocked by sys_clk_pin) and design_1_i/ZmodAWGController_0/U0/cCh1In_reg[5]/D (clocked by clk_100_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#30 Warning
 Large setup violation  
-There is a large setup violation of -6.481 ns between design_1_i/mult_gen_0/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[0][10]/C (clocked by sys_clk_pin) and design_1_i/ZmodAWGController_1/U0/cCh2In_reg[10]/D (clocked by clk_100_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -6.455 ns between design_1_i/mult_gen_0/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[0][5]/C (clocked by sys_clk_pin) and design_1_i/ZmodAWGController_0/U0/cCh2In_reg[5]/D (clocked by clk_100_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#31 Warning
 Large setup violation  
-There is a large setup violation of -6.481 ns between design_1_i/mult_gen_0/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[0][3]/C (clocked by sys_clk_pin) and design_1_i/ZmodAWGController_1/U0/cCh1In_reg[3]/D (clocked by clk_100_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -6.456 ns between design_1_i/mult_gen_0/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[0][7]/C (clocked by sys_clk_pin) and design_1_i/ZmodAWGController_1/U0/cCh1In_reg[7]/D (clocked by clk_100_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#32 Warning
 Large setup violation  
-There is a large setup violation of -6.484 ns between design_1_i/mult_gen_0/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[0][8]/C (clocked by sys_clk_pin) and design_1_i/ZmodAWGController_1/U0/cCh1In_reg[8]/D (clocked by clk_100_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -6.457 ns between design_1_i/mult_gen_0/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[0][12]/C (clocked by sys_clk_pin) and design_1_i/ZmodAWGController_0/U0/cCh1In_reg[12]/D (clocked by clk_100_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#33 Warning
 Large setup violation  
-There is a large setup violation of -6.488 ns between design_1_i/mult_gen_0/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[0][6]/C (clocked by sys_clk_pin) and design_1_i/ZmodAWGController_1/U0/cCh1In_reg[6]/D (clocked by clk_100_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -6.460 ns between design_1_i/mult_gen_0/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[0][7]/C (clocked by sys_clk_pin) and design_1_i/ZmodAWGController_1/U0/cCh2In_reg[7]/D (clocked by clk_100_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#34 Warning
 Large setup violation  
-There is a large setup violation of -6.490 ns between design_1_i/mult_gen_0/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[0][6]/C (clocked by sys_clk_pin) and design_1_i/ZmodAWGController_0/U0/cCh1In_reg[6]/D (clocked by clk_100_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -6.461 ns between design_1_i/mult_gen_0/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[0][0]/C (clocked by sys_clk_pin) and design_1_i/ZmodAWGController_1/U0/cCh2In_reg[0]/D (clocked by clk_100_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#35 Warning
 Large setup violation  
-There is a large setup violation of -6.491 ns between design_1_i/mult_gen_0/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[0][10]/C (clocked by sys_clk_pin) and design_1_i/ZmodAWGController_0/U0/cCh1In_reg[10]/D (clocked by clk_100_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -6.462 ns between design_1_i/mult_gen_0/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[0][5]/C (clocked by sys_clk_pin) and design_1_i/ZmodAWGController_1/U0/cCh2In_reg[5]/D (clocked by clk_100_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#36 Warning
 Large setup violation  
-There is a large setup violation of -6.493 ns between design_1_i/mult_gen_0/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[0][10]/C (clocked by sys_clk_pin) and design_1_i/ZmodAWGController_0/U0/cCh2In_reg[10]/D (clocked by clk_100_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -6.462 ns between design_1_i/mult_gen_0/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[0][7]/C (clocked by sys_clk_pin) and design_1_i/ZmodAWGController_0/U0/cCh2In_reg[7]/D (clocked by clk_100_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#37 Warning
 Large setup violation  
-There is a large setup violation of -6.493 ns between design_1_i/mult_gen_0/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[0][3]/C (clocked by sys_clk_pin) and design_1_i/ZmodAWGController_1/U0/cCh2In_reg[3]/D (clocked by clk_100_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -6.464 ns between design_1_i/mult_gen_0/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[0][0]/C (clocked by sys_clk_pin) and design_1_i/ZmodAWGController_1/U0/cCh1In_reg[0]/D (clocked by clk_100_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#38 Warning
 Large setup violation  
-There is a large setup violation of -6.496 ns between design_1_i/mult_gen_0/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[0][0]/C (clocked by sys_clk_pin) and design_1_i/ZmodAWGController_0/U0/cCh1In_reg[0]/D (clocked by clk_100_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -6.471 ns between design_1_i/mult_gen_0/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[0][11]/C (clocked by sys_clk_pin) and design_1_i/ZmodAWGController_1/U0/cCh2In_reg[11]/D (clocked by clk_100_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#39 Warning
 Large setup violation  
-There is a large setup violation of -6.509 ns between design_1_i/mult_gen_0/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[0][6]/C (clocked by sys_clk_pin) and design_1_i/ZmodAWGController_1/U0/cCh2In_reg[6]/D (clocked by clk_100_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -6.471 ns between design_1_i/mult_gen_0/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[0][4]/C (clocked by sys_clk_pin) and design_1_i/ZmodAWGController_0/U0/cCh1In_reg[4]/D (clocked by clk_100_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#40 Warning
 Large setup violation  
-There is a large setup violation of -6.526 ns between design_1_i/mult_gen_0/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[0][5]/C (clocked by sys_clk_pin) and design_1_i/ZmodAWGController_1/U0/cCh1In_reg[5]/D (clocked by clk_100_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -6.473 ns between design_1_i/mult_gen_0/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[0][12]/C (clocked by sys_clk_pin) and design_1_i/ZmodAWGController_1/U0/cCh2In_reg[12]/D (clocked by clk_100_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#41 Warning
 Large setup violation  
-There is a large setup violation of -6.535 ns between design_1_i/mult_gen_0/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[0][5]/C (clocked by sys_clk_pin) and design_1_i/ZmodAWGController_0/U0/cCh2In_reg[5]/D (clocked by clk_100_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -6.475 ns between design_1_i/mult_gen_0/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[0][10]/C (clocked by sys_clk_pin) and design_1_i/ZmodAWGController_0/U0/cCh2In_reg[10]/D (clocked by clk_100_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#42 Warning
 Large setup violation  
-There is a large setup violation of -6.540 ns between design_1_i/mult_gen_0/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[0][0]/C (clocked by sys_clk_pin) and design_1_i/ZmodAWGController_1/U0/cCh1In_reg[0]/D (clocked by clk_100_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -6.477 ns between design_1_i/mult_gen_0/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[0][8]/C (clocked by sys_clk_pin) and design_1_i/ZmodAWGController_0/U0/cCh2In_reg[8]/D (clocked by clk_100_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#43 Warning
 Large setup violation  
-There is a large setup violation of -6.545 ns between design_1_i/mult_gen_0/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[0][4]/C (clocked by sys_clk_pin) and design_1_i/ZmodAWGController_1/U0/cCh2In_reg[4]/D (clocked by clk_100_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -6.482 ns between design_1_i/mult_gen_0/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[0][11]/C (clocked by sys_clk_pin) and design_1_i/ZmodAWGController_0/U0/cCh1In_reg[11]/D (clocked by clk_100_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#44 Warning
 Large setup violation  
-There is a large setup violation of -6.566 ns between design_1_i/mult_gen_0/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[0][0]/C (clocked by sys_clk_pin) and design_1_i/ZmodAWGController_1/U0/cCh2In_reg[0]/D (clocked by clk_100_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -6.483 ns between design_1_i/mult_gen_0/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[0][4]/C (clocked by sys_clk_pin) and design_1_i/ZmodAWGController_1/U0/cCh2In_reg[4]/D (clocked by clk_100_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#45 Warning
 Large setup violation  
-There is a large setup violation of -6.587 ns between design_1_i/mult_gen_0/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[0][12]/C (clocked by sys_clk_pin) and design_1_i/ZmodAWGController_1/U0/cCh2In_reg[12]/D (clocked by clk_100_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -6.492 ns between design_1_i/mult_gen_0/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[0][12]/C (clocked by sys_clk_pin) and design_1_i/ZmodAWGController_1/U0/cCh1In_reg[12]/D (clocked by clk_100_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#46 Warning
 Large setup violation  
-There is a large setup violation of -6.591 ns between design_1_i/mult_gen_0/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[0][4]/C (clocked by sys_clk_pin) and design_1_i/ZmodAWGController_1/U0/cCh1In_reg[4]/D (clocked by clk_100_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -6.494 ns between design_1_i/mult_gen_0/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[0][4]/C (clocked by sys_clk_pin) and design_1_i/ZmodAWGController_0/U0/cCh2In_reg[4]/D (clocked by clk_100_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#47 Warning
 Large setup violation  
-There is a large setup violation of -6.614 ns between design_1_i/mult_gen_0/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[0][12]/C (clocked by sys_clk_pin) and design_1_i/ZmodAWGController_1/U0/cCh1In_reg[12]/D (clocked by clk_100_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -6.495 ns between design_1_i/mult_gen_0/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[0][8]/C (clocked by sys_clk_pin) and design_1_i/ZmodAWGController_1/U0/cCh1In_reg[8]/D (clocked by clk_100_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#48 Warning
 Large setup violation  
-There is a large setup violation of -6.615 ns between design_1_i/mult_gen_0/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[0][1]/C (clocked by sys_clk_pin) and design_1_i/ZmodAWGController_0/U0/cCh2In_reg[1]/D (clocked by clk_100_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -6.498 ns between design_1_i/mult_gen_0/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[0][6]/C (clocked by sys_clk_pin) and design_1_i/ZmodAWGController_1/U0/cCh1In_reg[6]/D (clocked by clk_100_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#49 Warning
 Large setup violation  
-There is a large setup violation of -6.617 ns between design_1_i/mult_gen_0/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[0][1]/C (clocked by sys_clk_pin) and design_1_i/ZmodAWGController_1/U0/cCh2In_reg[1]/D (clocked by clk_100_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -6.500 ns between design_1_i/mult_gen_0/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[0][8]/C (clocked by sys_clk_pin) and design_1_i/ZmodAWGController_0/U0/cCh1In_reg[8]/D (clocked by clk_100_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#50 Warning
 Large setup violation  
-There is a large setup violation of -6.620 ns between design_1_i/mult_gen_0/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[0][2]/C (clocked by sys_clk_pin) and design_1_i/ZmodAWGController_1/U0/cCh2In_reg[2]/D (clocked by clk_100_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -6.501 ns between design_1_i/mult_gen_0/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[0][6]/C (clocked by sys_clk_pin) and design_1_i/ZmodAWGController_1/U0/cCh2In_reg[6]/D (clocked by clk_100_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#51 Warning
 Large setup violation  
-There is a large setup violation of -6.629 ns between design_1_i/mult_gen_0/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[0][8]/C (clocked by sys_clk_pin) and design_1_i/ZmodAWGController_0/U0/cCh1In_reg[8]/D (clocked by clk_100_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -6.502 ns between design_1_i/mult_gen_0/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[0][11]/C (clocked by sys_clk_pin) and design_1_i/ZmodAWGController_1/U0/cCh1In_reg[11]/D (clocked by clk_100_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#52 Warning
 Large setup violation  
-There is a large setup violation of -6.632 ns between design_1_i/mult_gen_0/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[0][2]/C (clocked by sys_clk_pin) and design_1_i/ZmodAWGController_1/U0/cCh1In_reg[2]/D (clocked by clk_100_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -6.503 ns between design_1_i/mult_gen_0/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[0][4]/C (clocked by sys_clk_pin) and design_1_i/ZmodAWGController_1/U0/cCh1In_reg[4]/D (clocked by clk_100_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#53 Warning
 Large setup violation  
-There is a large setup violation of -6.632 ns between design_1_i/mult_gen_0/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[0][7]/C (clocked by sys_clk_pin) and design_1_i/ZmodAWGController_1/U0/cCh2In_reg[7]/D (clocked by clk_100_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -6.504 ns between design_1_i/mult_gen_0/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[0][8]/C (clocked by sys_clk_pin) and design_1_i/ZmodAWGController_1/U0/cCh2In_reg[8]/D (clocked by clk_100_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#54 Warning
 Large setup violation  
-There is a large setup violation of -6.640 ns between design_1_i/mult_gen_0/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[0][7]/C (clocked by sys_clk_pin) and design_1_i/ZmodAWGController_1/U0/cCh1In_reg[7]/D (clocked by clk_100_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -6.506 ns between design_1_i/mult_gen_0/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[0][10]/C (clocked by sys_clk_pin) and design_1_i/ZmodAWGController_1/U0/cCh1In_reg[10]/D (clocked by clk_100_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#55 Warning
 Large setup violation  
-There is a large setup violation of -6.648 ns between design_1_i/mult_gen_0/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[0][1]/C (clocked by sys_clk_pin) and design_1_i/ZmodAWGController_1/U0/cCh1In_reg[1]/D (clocked by clk_100_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -6.509 ns between design_1_i/mult_gen_0/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[0][11]/C (clocked by sys_clk_pin) and design_1_i/ZmodAWGController_0/U0/cCh2In_reg[11]/D (clocked by clk_100_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#56 Warning
 Large setup violation  
-There is a large setup violation of -6.670 ns between design_1_i/mult_gen_0/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[0][7]/C (clocked by sys_clk_pin) and design_1_i/ZmodAWGController_0/U0/cCh1In_reg[7]/D (clocked by clk_100_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -6.519 ns between design_1_i/mult_gen_0/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[0][6]/C (clocked by sys_clk_pin) and design_1_i/ZmodAWGController_0/U0/cCh1In_reg[6]/D (clocked by clk_100_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#57 Warning
 Large setup violation  
-There is a large setup violation of -6.671 ns between design_1_i/mult_gen_0/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[0][5]/C (clocked by sys_clk_pin) and design_1_i/ZmodAWGController_1/U0/cCh2In_reg[5]/D (clocked by clk_100_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -6.532 ns between design_1_i/mult_gen_0/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[0][6]/C (clocked by sys_clk_pin) and design_1_i/ZmodAWGController_0/U0/cCh2In_reg[6]/D (clocked by clk_100_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#58 Warning
 Large setup violation  
-There is a large setup violation of -6.685 ns between design_1_i/mult_gen_0/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[0][0]/C (clocked by sys_clk_pin) and design_1_i/ZmodAWGController_0/U0/cCh2In_reg[0]/D (clocked by clk_100_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -6.548 ns between design_1_i/mult_gen_0/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[0][2]/C (clocked by sys_clk_pin) and design_1_i/ZmodAWGController_0/U0/cCh1In_reg[2]/D (clocked by clk_100_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#59 Warning
 Large setup violation  
-There is a large setup violation of -6.730 ns between design_1_i/mult_gen_0/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[0][4]/C (clocked by sys_clk_pin) and design_1_i/ZmodAWGController_0/U0/cCh2In_reg[4]/D (clocked by clk_100_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -6.557 ns between design_1_i/mult_gen_0/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[0][2]/C (clocked by sys_clk_pin) and design_1_i/ZmodAWGController_1/U0/cCh1In_reg[2]/D (clocked by clk_100_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#60 Warning
 Large setup violation  
-There is a large setup violation of -6.749 ns between design_1_i/mult_gen_0/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[0][12]/C (clocked by sys_clk_pin) and design_1_i/ZmodAWGController_0/U0/cCh2In_reg[12]/D (clocked by clk_100_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -6.606 ns between design_1_i/mult_gen_0/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[0][1]/C (clocked by sys_clk_pin) and design_1_i/ZmodAWGController_0/U0/cCh2In_reg[1]/D (clocked by clk_100_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#61 Warning
 Large setup violation  
-There is a large setup violation of -6.764 ns between design_1_i/mult_gen_0/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[0][12]/C (clocked by sys_clk_pin) and design_1_i/ZmodAWGController_0/U0/cCh1In_reg[12]/D (clocked by clk_100_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -6.619 ns between design_1_i/mult_gen_0/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[0][0]/C (clocked by sys_clk_pin) and design_1_i/ZmodAWGController_0/U0/cCh2In_reg[0]/D (clocked by clk_100_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#62 Warning
 Large setup violation  
-There is a large setup violation of -6.785 ns between design_1_i/mult_gen_0/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[0][1]/C (clocked by sys_clk_pin) and design_1_i/ZmodAWGController_0/U0/cCh1In_reg[1]/D (clocked by clk_100_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -6.623 ns between design_1_i/mult_gen_0/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[0][0]/C (clocked by sys_clk_pin) and design_1_i/ZmodAWGController_0/U0/cCh1In_reg[0]/D (clocked by clk_100_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#63 Warning
 Large setup violation  
-There is a large setup violation of -6.819 ns between design_1_i/mult_gen_0/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[0][4]/C (clocked by sys_clk_pin) and design_1_i/ZmodAWGController_0/U0/cCh1In_reg[4]/D (clocked by clk_100_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -6.676 ns between design_1_i/mult_gen_0/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[0][5]/C (clocked by sys_clk_pin) and design_1_i/ZmodAWGController_1/U0/cCh1In_reg[5]/D (clocked by clk_100_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#64 Warning
 Large setup violation  
-There is a large setup violation of -6.850 ns between design_1_i/mult_gen_0/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[0][7]/C (clocked by sys_clk_pin) and design_1_i/ZmodAWGController_0/U0/cCh2In_reg[7]/D (clocked by clk_100_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -6.733 ns between design_1_i/mult_gen_0/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[0][10]/C (clocked by sys_clk_pin) and design_1_i/ZmodAWGController_1/U0/cCh2In_reg[10]/D (clocked by clk_100_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-18#1 Warning
 Missing input or output delay  
-An input delay is missing on btn_2bits_tri_i[0] relative to clock(s) clk_fpga_0
+An input delay is missing on gpio_io_i_0[0] relative to clock(s) clk_fpga_0
 Related violations: <none>
 
 TIMING-18#2 Warning
 Missing input or output delay  
-An input delay is missing on btn_2bits_tri_i[1] relative to clock(s) clk_fpga_0
+An input delay is missing on gpio_io_i_0[1] relative to clock(s) clk_fpga_0
 Related violations: <none>
 
 TIMING-18#3 Warning
 Missing input or output delay  
-An output delay is missing on ZmodDAC_ClkIO_0 relative to clock(s) ZmodDAC_ClkIO
+An output delay is missing on ZmodDAC_ClkIO_1 relative to clock(s) ZmodDAC_ClkIO
 Related violations: <none>
 
 TIMING-18#4 Warning
 Missing input or output delay  
-An output delay is missing on ZmodDAC_ClkIn_0 relative to clock(s) ZmodDAC_ClkIO
+An output delay is missing on ZmodDAC_ClkIn_1 relative to clock(s) ZmodDAC_ClkIO
+Related violations: <none>
+
+TIMING-18#5 Warning
+Missing input or output delay  
+An output delay is missing on gpio2_io_o_0[0] relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#6 Warning
+Missing input or output delay  
+An output delay is missing on gpio2_io_o_0[1] relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#7 Warning
+Missing input or output delay  
+An output delay is missing on gpio2_io_o_0[2] relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#8 Warning
+Missing input or output delay  
+An output delay is missing on gpio2_io_o_0[3] relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#9 Warning
+Missing input or output delay  
+An output delay is missing on gpio2_io_o_0[4] relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#10 Warning
+Missing input or output delay  
+An output delay is missing on gpio2_io_o_0[5] relative to clock(s) clk_fpga_0
 Related violations: <none>
 
 XDCB-5#1 Warning
 Runtime inefficient way to find pin objects  
 The option '-from : [get_pins -filter {NAME =~ *InstDacClkReset*SyncAsync*/oSyncStages_reg[0]/C} -hier]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '11' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: c:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.srcs/sources_1/bd/design_1/ip/design_1_ZmodAWGController_0_0/ConstrsZmodDAC.xdc (Line: 9)
+Current XDC: c:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.srcs/sources_1/bd/design_1/ip/design_1_ZmodAWGController_0_3/ConstrsZmodDAC.xdc (Line: 9)
 Related violations: <none>
 
 XDCB-5#2 Warning
 Runtime inefficient way to find pin objects  
 The option '-from : [get_pins -filter {NAME =~ *InstDacClkReset*SyncAsync*/oSyncStages_reg[0]/C} -hier]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '25' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: c:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.srcs/sources_1/bd/design_1/ip/design_1_ZmodAWGController_0_3/ConstrsZmodDAC.xdc (Line: 9)
+Current XDC: c:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.srcs/sources_1/bd/design_1/ip/design_1_ZmodAWGController_0_4/ConstrsZmodDAC.xdc (Line: 9)
 Related violations: <none>
 
 XDCB-5#3 Warning
 Runtime inefficient way to find pin objects  
 The option '-from : [get_pins -filter {NAME =~ *InstDacSamplingReset*SyncAsync*/oSyncStages_reg[0]/C} -hier]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '10' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: c:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.srcs/sources_1/bd/design_1/ip/design_1_ZmodAWGController_0_0/ConstrsZmodDAC.xdc (Line: 7)
+Current XDC: c:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.srcs/sources_1/bd/design_1/ip/design_1_ZmodAWGController_0_3/ConstrsZmodDAC.xdc (Line: 7)
 Related violations: <none>
 
 XDCB-5#4 Warning
 Runtime inefficient way to find pin objects  
 The option '-from : [get_pins -filter {NAME =~ *InstDacSamplingReset*SyncAsync*/oSyncStages_reg[0]/C} -hier]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '24' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: c:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.srcs/sources_1/bd/design_1/ip/design_1_ZmodAWGController_0_3/ConstrsZmodDAC.xdc (Line: 7)
+Current XDC: c:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.srcs/sources_1/bd/design_1/ip/design_1_ZmodAWGController_0_4/ConstrsZmodDAC.xdc (Line: 7)
 Related violations: <none>
 
 XDCB-5#5 Warning
 Runtime inefficient way to find pin objects  
 The option '-from : [get_pins -filter {NAME =~ *InstDacSysReset*SyncAsync*/oSyncStages_reg[0]/C} -hier]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '23' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: c:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.srcs/sources_1/bd/design_1/ip/design_1_ZmodAWGController_0_3/ConstrsZmodDAC.xdc (Line: 5)
+Current XDC: c:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.srcs/sources_1/bd/design_1/ip/design_1_ZmodAWGController_0_4/ConstrsZmodDAC.xdc (Line: 5)
 Related violations: <none>
 
 XDCB-5#6 Warning
 Runtime inefficient way to find pin objects  
 The option '-from : [get_pins -filter {NAME =~ *InstDacSysReset*SyncAsync*/oSyncStages_reg[0]/C} -hier]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '9' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: c:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.srcs/sources_1/bd/design_1/ip/design_1_ZmodAWGController_0_0/ConstrsZmodDAC.xdc (Line: 5)
+Current XDC: c:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.srcs/sources_1/bd/design_1/ip/design_1_ZmodAWGController_0_3/ConstrsZmodDAC.xdc (Line: 5)
 Related violations: <none>
 
 XDCB-5#7 Warning
 Runtime inefficient way to find pin objects  
 The option '-from : [get_pins -filter {NAME =~ *InstDacTestModeSync*SyncAsync*/oSyncStages_reg[0]/C} -hier]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '12' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: c:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.srcs/sources_1/bd/design_1/ip/design_1_ZmodAWGController_0_0/ConstrsZmodDAC.xdc (Line: 11)
+Current XDC: c:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.srcs/sources_1/bd/design_1/ip/design_1_ZmodAWGController_0_3/ConstrsZmodDAC.xdc (Line: 11)
 Related violations: <none>
 
 XDCB-5#8 Warning
 Runtime inefficient way to find pin objects  
 The option '-from : [get_pins -filter {NAME =~ *InstDacTestModeSync*SyncAsync*/oSyncStages_reg[0]/C} -hier]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '26' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: c:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.srcs/sources_1/bd/design_1/ip/design_1_ZmodAWGController_0_3/ConstrsZmodDAC.xdc (Line: 11)
+Current XDC: c:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.srcs/sources_1/bd/design_1/ip/design_1_ZmodAWGController_0_4/ConstrsZmodDAC.xdc (Line: 11)
 Related violations: <none>
 
 XDCB-5#9 Warning
 Runtime inefficient way to find pin objects  
 The option '-through : [get_pins -filter {NAME =~ *SyncAsync*/oSyncStages_reg[0]/D} -hier]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '22' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: c:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.srcs/sources_1/bd/design_1/ip/design_1_ZmodAWGController_0_3/ConstrsZmodDAC.xdc (Line: 2)
+Current XDC: c:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.srcs/sources_1/bd/design_1/ip/design_1_ZmodAWGController_0_4/ConstrsZmodDAC.xdc (Line: 2)
 Related violations: <none>
 
 XDCB-5#10 Warning
 Runtime inefficient way to find pin objects  
 The option '-through : [get_pins -filter {NAME =~ *SyncAsync*/oSyncStages_reg[0]/D} -hier]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '8' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: c:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.srcs/sources_1/bd/design_1/ip/design_1_ZmodAWGController_0_0/ConstrsZmodDAC.xdc (Line: 2)
+Current XDC: c:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.srcs/sources_1/bd/design_1/ip/design_1_ZmodAWGController_0_3/ConstrsZmodDAC.xdc (Line: 2)
 Related violations: <none>
 
 XDCB-5#11 Warning
 Runtime inefficient way to find pin objects  
 The option '-to : [get_pins -filter {NAME =~ *InstDacClkReset*SyncAsync*/oSyncStages_reg[1]/D} -hier]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '11' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: c:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.srcs/sources_1/bd/design_1/ip/design_1_ZmodAWGController_0_0/ConstrsZmodDAC.xdc (Line: 9)
+Current XDC: c:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.srcs/sources_1/bd/design_1/ip/design_1_ZmodAWGController_0_3/ConstrsZmodDAC.xdc (Line: 9)
 Related violations: <none>
 
 XDCB-5#12 Warning
 Runtime inefficient way to find pin objects  
 The option '-to : [get_pins -filter {NAME =~ *InstDacClkReset*SyncAsync*/oSyncStages_reg[1]/D} -hier]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '25' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: c:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.srcs/sources_1/bd/design_1/ip/design_1_ZmodAWGController_0_3/ConstrsZmodDAC.xdc (Line: 9)
+Current XDC: c:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.srcs/sources_1/bd/design_1/ip/design_1_ZmodAWGController_0_4/ConstrsZmodDAC.xdc (Line: 9)
 Related violations: <none>
 
 XDCB-5#13 Warning
 Runtime inefficient way to find pin objects  
 The option '-to : [get_pins -filter {NAME =~ *InstDacSamplingReset*SyncAsync*/oSyncStages_reg[1]/D} -hier]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '10' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: c:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.srcs/sources_1/bd/design_1/ip/design_1_ZmodAWGController_0_0/ConstrsZmodDAC.xdc (Line: 7)
+Current XDC: c:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.srcs/sources_1/bd/design_1/ip/design_1_ZmodAWGController_0_3/ConstrsZmodDAC.xdc (Line: 7)
 Related violations: <none>
 
 XDCB-5#14 Warning
 Runtime inefficient way to find pin objects  
 The option '-to : [get_pins -filter {NAME =~ *InstDacSamplingReset*SyncAsync*/oSyncStages_reg[1]/D} -hier]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '24' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: c:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.srcs/sources_1/bd/design_1/ip/design_1_ZmodAWGController_0_3/ConstrsZmodDAC.xdc (Line: 7)
+Current XDC: c:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.srcs/sources_1/bd/design_1/ip/design_1_ZmodAWGController_0_4/ConstrsZmodDAC.xdc (Line: 7)
 Related violations: <none>
 
 XDCB-5#15 Warning
 Runtime inefficient way to find pin objects  
 The option '-to : [get_pins -filter {NAME =~ *InstDacSysReset*SyncAsync*/oSyncStages_reg[1]/D} -hier]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '23' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: c:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.srcs/sources_1/bd/design_1/ip/design_1_ZmodAWGController_0_3/ConstrsZmodDAC.xdc (Line: 5)
+Current XDC: c:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.srcs/sources_1/bd/design_1/ip/design_1_ZmodAWGController_0_4/ConstrsZmodDAC.xdc (Line: 5)
 Related violations: <none>
 
 XDCB-5#16 Warning
 Runtime inefficient way to find pin objects  
 The option '-to : [get_pins -filter {NAME =~ *InstDacSysReset*SyncAsync*/oSyncStages_reg[1]/D} -hier]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '9' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: c:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.srcs/sources_1/bd/design_1/ip/design_1_ZmodAWGController_0_0/ConstrsZmodDAC.xdc (Line: 5)
+Current XDC: c:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.srcs/sources_1/bd/design_1/ip/design_1_ZmodAWGController_0_3/ConstrsZmodDAC.xdc (Line: 5)
 Related violations: <none>
 
 XDCB-5#17 Warning
 Runtime inefficient way to find pin objects  
 The option '-to : [get_pins -filter {NAME =~ *InstDacTestModeSync*SyncAsync*/oSyncStages_reg[1]/D} -hier]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '12' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: c:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.srcs/sources_1/bd/design_1/ip/design_1_ZmodAWGController_0_0/ConstrsZmodDAC.xdc (Line: 11)
+Current XDC: c:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.srcs/sources_1/bd/design_1/ip/design_1_ZmodAWGController_0_3/ConstrsZmodDAC.xdc (Line: 11)
 Related violations: <none>
 
 XDCB-5#18 Warning
 Runtime inefficient way to find pin objects  
 The option '-to : [get_pins -filter {NAME =~ *InstDacTestModeSync*SyncAsync*/oSyncStages_reg[1]/D} -hier]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '26' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: c:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.srcs/sources_1/bd/design_1/ip/design_1_ZmodAWGController_0_3/ConstrsZmodDAC.xdc (Line: 11)
+Current XDC: c:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.srcs/sources_1/bd/design_1/ip/design_1_ZmodAWGController_0_4/ConstrsZmodDAC.xdc (Line: 11)
 Related violations: <none>
 
 XDCC-1#1 Warning
 Scoped Clock constraint overwritten with the same name  
 A new clock constraint create_generated_clock overrides a previous scoped clock constraint with the same name. It is not recommended to override a scoped (typically an IP) clock constraint and could result in unexpected behaviors.
-New: create_generated_clock -name ZmodDAC_ClkIO -source [get_pins InstDAC_ClkIO_ODDR/C] -divide_by 1 -add -master_clock clk_100n_design_1_clk_wiz_0_0 [get_ports ZmodDAC_ClkIO_1] (Source: c:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.srcs/sources_1/bd/design_1/ip/design_1_ZmodAWGController_0_3/ConstrsZmodDAC.xdc (Line: 18))
-Previous: create_generated_clock -name ZmodDAC_ClkIO -source [get_pins InstDAC_ClkIO_ODDR/C] -divide_by 1 -add -master_clock clk_100n_design_1_clk_wiz_0_0 [get_ports ZmodDAC_ClkIO_0] (Source: c:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.srcs/sources_1/bd/design_1/ip/design_1_ZmodAWGController_0_0/ConstrsZmodDAC.xdc (Line: 18))
+New: create_generated_clock -name ZmodDAC_ClkIO -source [get_pins InstDAC_ClkIO_ODDR/C] -divide_by 1 -add -master_clock clk_100n_design_1_clk_wiz_0_0 [get_ports ZmodDAC_ClkIO_0] (Source: c:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.srcs/sources_1/bd/design_1/ip/design_1_ZmodAWGController_0_4/ConstrsZmodDAC.xdc (Line: 18))
+Previous: create_generated_clock -name ZmodDAC_ClkIO -source [get_pins InstDAC_ClkIO_ODDR/C] -divide_by 1 -add -master_clock clk_100n_design_1_clk_wiz_0_0 [get_ports ZmodDAC_ClkIO_1] (Source: c:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.srcs/sources_1/bd/design_1/ip/design_1_ZmodAWGController_0_3/ConstrsZmodDAC.xdc (Line: 18))
 Related violations: <none>
 
 XDCC-1#2 Warning
 Scoped Clock constraint overwritten with the same name  
 A new clock constraint create_generated_clock overrides a previous scoped clock constraint with the same name. It is not recommended to override a scoped (typically an IP) clock constraint and could result in unexpected behaviors.
-New: create_generated_clock -name ZmodDAC_ClkIn -source [get_pins InstDAC_ClkinODDR/C] -divide_by 1 -add -master_clock clk_100n_design_1_clk_wiz_0_0 [get_ports ZmodDAC_ClkIn_1] (Source: c:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.srcs/sources_1/bd/design_1/ip/design_1_ZmodAWGController_0_3/ConstrsZmodDAC.xdc (Line: 19))
-Previous: create_generated_clock -name ZmodDAC_ClkIn -source [get_pins InstDAC_ClkinODDR/C] -divide_by 1 -add -master_clock clk_100n_design_1_clk_wiz_0_0 [get_ports ZmodDAC_ClkIn_0] (Source: c:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.srcs/sources_1/bd/design_1/ip/design_1_ZmodAWGController_0_0/ConstrsZmodDAC.xdc (Line: 19))
+New: create_generated_clock -name ZmodDAC_ClkIn -source [get_pins InstDAC_ClkinODDR/C] -divide_by 1 -add -master_clock clk_100n_design_1_clk_wiz_0_0 [get_ports ZmodDAC_ClkIn_0] (Source: c:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.srcs/sources_1/bd/design_1/ip/design_1_ZmodAWGController_0_4/ConstrsZmodDAC.xdc (Line: 19))
+Previous: create_generated_clock -name ZmodDAC_ClkIn -source [get_pins InstDAC_ClkinODDR/C] -divide_by 1 -add -master_clock clk_100n_design_1_clk_wiz_0_0 [get_ports ZmodDAC_ClkIn_1] (Source: c:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.srcs/sources_1/bd/design_1/ip/design_1_ZmodAWGController_0_3/ConstrsZmodDAC.xdc (Line: 19))
 Related violations: <none>
 
 

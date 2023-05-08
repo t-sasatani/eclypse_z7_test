@@ -8,6 +8,7 @@
 <includePath path="#undef __thumb2__" removed="true"/>
 <includePath path="#undef __ARM_FEATURE_CMSE" removed="true"/>
 <includePath path="c:\xilinx\sdk\2019.1\gnu\aarch32\nt\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/8.2.0/include"/>
+<includePath path="#undef __ARM_ARCH_PROFILE" removed="true"/>
 <includePath path="#undef __ARM_FEATURE_SAT" removed="true"/>
 <includePath path="#undef __THUMBEL__" removed="true"/>
 <includePath path="#undef __ARM_FEATURE_LDREX" removed="true"/>
@@ -17,6 +18,7 @@
 <includePath path="#undef __ARM_FEATURE_CLZ" removed="true"/>
 <includePath path="#undef __ARM_FP" removed="true"/>
 <includePath path="c:\xilinx\sdk\2019.1\gnu\aarch32\nt\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/8.2.0/../../../../arm-none-eabi/include"/>
+<includePath path="#undef __ARM_ARCH" removed="true"/>
 <includePath path="#undef __ARM_FEATURE_UNALIGNED" removed="true"/>
 <includePath path="#undef __ARM_FEATURE_NUMERIC_MAXMIN" removed="true"/>
 <includePath path="#undef __ARM_FP16_FORMAT_IEEE" removed="true"/>
@@ -855,6 +857,8 @@
 </instance>
 <instance id="xilinx.gnu.armv7.exe.debug.1575116768;xilinx.gnu.armv7.exe.debug.1575116768.;xilinx.gnu.armv7.c.toolchain.compiler.debug.1657740981;xilinx.gnu.armv7.c.compiler.input.1557280331">
 <collector id="org.eclipse.cdt.make.core.PerProjectSICollector">
+<includePath path="#undef __ARM_FEATURE_IDIV" removed="true"/>
+<includePath path="#undef __ARM_ASM_SYNTAX_UNIFIED__" removed="true"/>
 <includePath path="#undef __ARM_FP16_ARGS" removed="true"/>
 <includePath path="#undef __ARM_FEATURE_FP16_SCALAR_ARITHMETIC" removed="true"/>
 <includePath path="#undef __ARM_FEATURE_FP16_VECTOR_ARITHMETIC" removed="true"/>
@@ -863,6 +867,7 @@
 <includePath path="#undef __ARM_FEATURE_QRDMX" removed="true"/>
 <includePath path="#undef __ARM_FEATURE_CRC32" removed="true"/>
 <includePath path="c:\xilinx\sdk\2019.1\gnu\aarch32\nt\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/8.2.0/include"/>
+<includePath path="#undef __ARM_FEATURE_COPROC" removed="true"/>
 <includePath path="#undef __ARM_FEATURE_FP16_FML" removed="true"/>
 <includePath path="#undef __ARM_FEATURE_CRYPTO" removed="true"/>
 <includePath path="#undef __ARM_FEATURE_DOTPROD" removed="true"/>

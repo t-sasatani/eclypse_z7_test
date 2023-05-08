@@ -18,6 +18,8 @@ proc create_report { reportName command } {
   }
 }
 set_param chipscope.maxJobs 5
+set_param xicom.use_bs_reader 1
+set_msg_config -id {Common 17-41} -limit 10000000
 create_project -in_memory -part xc7z020clg484-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -28,16 +30,14 @@ set_property webtalk.parent_dir C:/Users/Takuya/Documents/GitHub/eclypse_z7_test
 set_property parent.project_path C:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.xpr [current_project]
 set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
-set_property target_language VHDL [current_project]
+set_property target_language Verilog [current_project]
 set_property board_part digilentinc.com:eclypse-z7:part0:1.1 [current_project]
 set_property ip_repo_paths c:/Users/Takuya/Documents/GitHub/vivado-library [current_project]
 update_ip_catalog
 set_property ip_output_repo c:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
-read_vhdl -library xil_defaultlib C:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+read_verilog -library xil_defaultlib C:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
 add_files C:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.srcs/sources_1/bd/design_1/design_1.bd
-set_property used_in_implementation false [get_files -all c:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.srcs/sources_1/bd/design_1/ip/design_1_ZmodAWGController_0_0/ConstrsZmodDAC.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.srcs/sources_1/bd/design_1/ip/design_1_ZmodAWGController_0_0/constr/ConstrZmodDAC1411_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_board.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_ooc.xdc]
@@ -52,6 +52,8 @@ set_property used_in_implementation false [get_files -all c:/Users/Takuya/Docume
 set_property used_in_implementation false [get_files -all c:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.srcs/sources_1/bd/design_1/ip/design_1_mult_gen_0_0/design_1_mult_gen_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.srcs/sources_1/bd/design_1/ip/design_1_ZmodAWGController_0_4/ConstrsZmodDAC.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.srcs/sources_1/bd/design_1/ip/design_1_ZmodAWGController_0_4/constr/ConstrZmodDAC1411_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all C:/Users/Takuya/Documents/GitHub/eclypse_z7_test/AWG_test/AWG_test.srcs/sources_1/bd/design_1/design_1_ooc.xdc]
 

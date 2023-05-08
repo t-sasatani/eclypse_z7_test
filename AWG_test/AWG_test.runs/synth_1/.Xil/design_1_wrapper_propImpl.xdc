@@ -2,21 +2,21 @@ set_property SRC_FILE_INFO {cfile:C:/Users/Takuya/Documents/GitHub/eclypse_z7_te
 set_property src_info {type:XDC file:1 line:7 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict { PACKAGE_PIN D18   IOSTANDARD LVCMOS33 } [get_ports { sys_clock }]; #IO_L12P_T1_MRCC Sch=sysclk
 set_property src_info {type:XDC file:1 line:11 export:INPUT save:INPUT read:READ} [current_design]
-set_property -dict { PACKAGE_PIN C17   IOSTANDARD LVCMOS33 } [get_ports { btn[0] }]; #IO_L11P_T1_SRCC Sch=btn[0]
+set_property -dict { PACKAGE_PIN C17   IOSTANDARD LVCMOS33 } [get_ports { gpio_io_i_0[0] }]; #IO_L11P_T1_SRCC Sch=btn[0]
 set_property src_info {type:XDC file:1 line:12 export:INPUT save:INPUT read:READ} [current_design]
-set_property -dict { PACKAGE_PIN C18   IOSTANDARD LVCMOS33 } [get_ports { btn[1] }]; #IO_L11N_T1_SRCC Sch=btn[1]
+set_property -dict { PACKAGE_PIN C18   IOSTANDARD LVCMOS33 } [get_ports { gpio_io_i_0[1] }]; #IO_L11N_T1_SRCC Sch=btn[1]
 set_property src_info {type:XDC file:1 line:15 export:INPUT save:INPUT read:READ} [current_design]
-set_property -dict { PACKAGE_PIN A17   IOSTANDARD LVCMOS33 } [get_ports { led0_b }]; #IO_L9N_T1_DQS_AD3N Sch=led0_b
+set_property -dict { PACKAGE_PIN A17   IOSTANDARD LVCMOS33 } [get_ports { gpio2_io_o_0[0] }]; #IO_L9N_T1_DQS_AD3N Sch=led0_b
 set_property src_info {type:XDC file:1 line:16 export:INPUT save:INPUT read:READ} [current_design]
-set_property -dict { PACKAGE_PIN B16   IOSTANDARD LVCMOS33 } [get_ports { led0_g }]; #IO_L8P_T1_AD10P Sch=led0_g
+set_property -dict { PACKAGE_PIN B16   IOSTANDARD LVCMOS33 } [get_ports { gpio2_io_o_0[1] }]; #IO_L8P_T1_AD10P Sch=led0_g
 set_property src_info {type:XDC file:1 line:17 export:INPUT save:INPUT read:READ} [current_design]
-set_property -dict { PACKAGE_PIN B17   IOSTANDARD LVCMOS33 } [get_ports { led0_r }]; #IO_L8N_T1_AD10N Sch=led0_r
+set_property -dict { PACKAGE_PIN B17   IOSTANDARD LVCMOS33 } [get_ports { gpio2_io_o_0[2] }]; #IO_L8N_T1_AD10N Sch=led0_r
 set_property src_info {type:XDC file:1 line:18 export:INPUT save:INPUT read:READ} [current_design]
-set_property -dict { PACKAGE_PIN A16   IOSTANDARD LVCMOS33 } [get_ports { led1_b }]; #IO_L9P_T1_DQS_AD3P Sch=led1_b
+set_property -dict { PACKAGE_PIN A16   IOSTANDARD LVCMOS33 } [get_ports { gpio2_io_o_0[3] }]; #IO_L9P_T1_DQS_AD3P Sch=led1_b
 set_property src_info {type:XDC file:1 line:19 export:INPUT save:INPUT read:READ} [current_design]
-set_property -dict { PACKAGE_PIN A18   IOSTANDARD LVCMOS33 } [get_ports { led1_g }]; #IO_L10P_T1_AD11P Sch=led1_g
+set_property -dict { PACKAGE_PIN A18   IOSTANDARD LVCMOS33 } [get_ports { gpio2_io_o_0[4] }]; #IO_L10P_T1_AD11P Sch=led1_g
 set_property src_info {type:XDC file:1 line:20 export:INPUT save:INPUT read:READ} [current_design]
-set_property -dict { PACKAGE_PIN A19   IOSTANDARD LVCMOS33 } [get_ports { led1_r }]; #IO_L10N_T1_AD11N Sch=led1_r
+set_property -dict { PACKAGE_PIN A19   IOSTANDARD LVCMOS33 } [get_ports { gpio2_io_o_0[5] }]; #IO_L10N_T1_AD11N Sch=led1_r
 set_property src_info {type:XDC file:1 line:44 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN Y19 [get_ports {dZmodDAC_Data_0[0]}]
 set_property src_info {type:XDC file:1 line:45 export:INPUT save:INPUT read:READ} [current_design]

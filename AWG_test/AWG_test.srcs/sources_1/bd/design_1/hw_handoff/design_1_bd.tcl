@@ -160,10 +160,6 @@ proc create_root_design { parentCell } {
 
   set FIXED_IO [ create_bd_intf_port -mode Master -vlnv xilinx.com:display_processing_system7:fixedio_rtl:1.0 FIXED_IO ]
 
-  set btn_2bits [ create_bd_intf_port -mode Master -vlnv xilinx.com:interface:gpio_rtl:1.0 btn_2bits ]
-
-  set rgbled_6bits [ create_bd_intf_port -mode Master -vlnv xilinx.com:interface:gpio_rtl:1.0 rgbled_6bits ]
-
 
   # Create ports
   set ZmodDAC_ClkIO_0 [ create_bd_port -dir O -type clk ZmodDAC_ClkIO_0 ]
@@ -172,6 +168,8 @@ proc create_root_design { parentCell } {
   set ZmodDAC_ClkIn_1 [ create_bd_port -dir O -type clk ZmodDAC_ClkIn_1 ]
   set dZmodDAC_Data_0 [ create_bd_port -dir O -from 13 -to 0 dZmodDAC_Data_0 ]
   set dZmodDAC_Data_1 [ create_bd_port -dir O -from 13 -to 0 dZmodDAC_Data_1 ]
+  set gpio2_io_o_0 [ create_bd_port -dir O -from 5 -to 0 gpio2_io_o_0 ]
+  set gpio_io_i_0 [ create_bd_port -dir I -from 1 -to 0 gpio_io_i_0 ]
   set sZmodDAC_CS_0 [ create_bd_port -dir O sZmodDAC_CS_0 ]
   set sZmodDAC_CS_1 [ create_bd_port -dir O sZmodDAC_CS_1 ]
   set sZmodDAC_EnOut_0 [ create_bd_port -dir O sZmodDAC_EnOut_0 ]
@@ -195,7 +193,7 @@ proc create_root_design { parentCell } {
   # Create instance: ZmodAWGController_0, and set properties
   set ZmodAWGController_0 [ create_bd_cell -type ip -vlnv digilent.com:user:ZmodAWGController:1.1 ZmodAWGController_0 ]
   set_property -dict [ list \
-   CONFIG.kCh1ScaleStatic {"1"} \
+   CONFIG.kCh2ScaleStatic {"1"} \
  ] $ZmodAWGController_0
 
   # Create instance: ZmodAWGController_1, and set properties
@@ -209,8 +207,8 @@ proc create_root_design { parentCell } {
   set_property -dict [ list \
    CONFIG.C_GPIO2_WIDTH {6} \
    CONFIG.C_IS_DUAL {1} \
-   CONFIG.GPIO2_BOARD_INTERFACE {rgbled_6bits} \
-   CONFIG.GPIO_BOARD_INTERFACE {btn_2bits} \
+   CONFIG.GPIO2_BOARD_INTERFACE {Custom} \
+   CONFIG.GPIO_BOARD_INTERFACE {Custom} \
    CONFIG.USE_BOARD_FLOW {true} \
  ] $axi_gpio_0
 
@@ -708,8 +706,6 @@ proc create_root_design { parentCell } {
   set xlconstant_2 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 xlconstant_2 ]
 
   # Create interface connections
-  connect_bd_intf_net -intf_net axi_gpio_0_GPIO [get_bd_intf_ports btn_2bits] [get_bd_intf_pins axi_gpio_0/GPIO]
-  connect_bd_intf_net -intf_net axi_gpio_0_GPIO2 [get_bd_intf_ports rgbled_6bits] [get_bd_intf_pins axi_gpio_0/GPIO2]
   connect_bd_intf_net -intf_net processing_system7_0_DDR [get_bd_intf_ports DDR] [get_bd_intf_pins processing_system7_0/DDR]
   connect_bd_intf_net -intf_net processing_system7_0_FIXED_IO [get_bd_intf_ports FIXED_IO] [get_bd_intf_pins processing_system7_0/FIXED_IO]
   connect_bd_intf_net -intf_net processing_system7_0_M_AXI_GP0 [get_bd_intf_pins processing_system7_0/M_AXI_GP0] [get_bd_intf_pins ps7_0_axi_periph/S00_AXI]
@@ -736,10 +732,11 @@ proc create_root_design { parentCell } {
   connect_bd_net -net ZmodAWGController_0_sZmodDAC_SetFS2 [get_bd_ports sZmodDAC_SetFS2_0] [get_bd_pins ZmodAWGController_0/sZmodDAC_SetFS2]
   connect_bd_net -net ZmodAWGController_0_sZmodDAC_SetFS3 [get_bd_ports sZmodDAC_SetFS1_1] [get_bd_pins ZmodAWGController_1/sZmodDAC_SetFS1]
   connect_bd_net -net ZmodAWGController_0_sZmodDAC_SetFS4 [get_bd_ports sZmodDAC_SetFS2_1] [get_bd_pins ZmodAWGController_1/sZmodDAC_SetFS2]
-  connect_bd_net -net axi_gpio_0_gpio2_io_o [get_bd_pins axi_gpio_0/gpio2_io_o] [get_bd_pins mult_gen_0/B]
+  connect_bd_net -net axi_gpio_0_gpio2_io_o [get_bd_ports gpio2_io_o_0] [get_bd_pins axi_gpio_0/gpio2_io_o] [get_bd_pins mult_gen_0/B]
   connect_bd_net -net c_counter_binary_0_Q [get_bd_pins c_counter_binary_0/Q] [get_bd_pins mult_gen_0/A]
   connect_bd_net -net clk_wiz_0_clk_100 [get_bd_pins ZmodAWGController_0/DAC_InIO_Clk] [get_bd_pins ZmodAWGController_0/SysClk100] [get_bd_pins ZmodAWGController_1/DAC_InIO_Clk] [get_bd_pins ZmodAWGController_1/SysClk100] [get_bd_pins clk_wiz_0/clk_100]
   connect_bd_net -net clk_wiz_0_clk_100n [get_bd_pins ZmodAWGController_0/DAC_Clk] [get_bd_pins ZmodAWGController_1/DAC_Clk] [get_bd_pins clk_wiz_0/clk_100n]
+  connect_bd_net -net gpio_io_i_0_1 [get_bd_ports gpio_io_i_0] [get_bd_pins axi_gpio_0/gpio_io_i]
   connect_bd_net -net processing_system7_0_FCLK_CLK0 [get_bd_pins axi_gpio_0/s_axi_aclk] [get_bd_pins processing_system7_0/FCLK_CLK0] [get_bd_pins processing_system7_0/M_AXI_GP0_ACLK] [get_bd_pins ps7_0_axi_periph/ACLK] [get_bd_pins ps7_0_axi_periph/M00_ACLK] [get_bd_pins ps7_0_axi_periph/S00_ACLK] [get_bd_pins rst_ps7_0_100M/slowest_sync_clk]
   connect_bd_net -net processing_system7_0_FCLK_RESET0_N [get_bd_pins processing_system7_0/FCLK_RESET0_N] [get_bd_pins rst_ps7_0_100M/ext_reset_in]
   connect_bd_net -net resetn_0_1 [get_bd_pins ZmodAWGController_0/aRst_n] [get_bd_pins ZmodAWGController_1/aRst_n] [get_bd_pins clk_wiz_0/resetn] [get_bd_pins xlconstant_2/dout]

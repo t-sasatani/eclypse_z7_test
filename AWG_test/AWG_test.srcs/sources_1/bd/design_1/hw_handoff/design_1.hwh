@@ -1,59 +1,9 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Fri May  5 18:44:44 2023" VIVADOVERSION="2019.1">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Mon May  8 02:47:39 2023" VIVADOVERSION="2019.1">
 
   <SYSTEMINFO ARCH="zynq" BOARD="digilentinc.com:eclypse-z7:part0:1.1" DEVICE="7z020" NAME="design_1" PACKAGE="clg484" SPEEDGRADE="-1"/>
 
   <EXTERNALPORTS>
-    <PORT DIR="O" NAME="sZmodDAC_SetFS1_0" SIGIS="undef" SIGNAME="ZmodAWGController_0_sZmodDAC_SetFS1">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="ZmodAWGController_0" PORT="sZmodDAC_SetFS1"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT CLKFREQUENCY="100000000" DIR="O" NAME="ZmodDAC_ClkIO_0" SIGIS="clk" SIGNAME="ZmodAWGController_0_ZmodDAC_ClkIO">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="ZmodAWGController_0" PORT="ZmodDAC_ClkIO"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT CLKFREQUENCY="100000000" DIR="O" NAME="ZmodDAC_ClkIn_0" SIGIS="clk" SIGNAME="ZmodAWGController_0_ZmodDAC_ClkIn">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="ZmodAWGController_0" PORT="ZmodDAC_ClkIn"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="O" LEFT="13" NAME="dZmodDAC_Data_0" RIGHT="0" SIGIS="undef" SIGNAME="ZmodAWGController_0_dZmodDAC_Data">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="ZmodAWGController_0" PORT="dZmodDAC_Data"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="IO" NAME="sZmodDAC_SDIO_0" SIGIS="undef" SIGNAME="External_Ports_sZmodDAC_SDIO_0">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="ZmodAWGController_0" PORT="sZmodDAC_SDIO"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="O" NAME="sZmodDAC_Reset_0" SIGIS="rst" SIGNAME="ZmodAWGController_0_sZmodDAC_Reset">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="ZmodAWGController_0" PORT="sZmodDAC_Reset"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="O" NAME="sZmodDAC_CS_0" SIGIS="undef" SIGNAME="ZmodAWGController_0_sZmodDAC_CS">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="ZmodAWGController_0" PORT="sZmodDAC_CS"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="O" NAME="sZmodDAC_SCLK_0" SIGIS="undef" SIGNAME="ZmodAWGController_0_sZmodDAC_SCLK">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="ZmodAWGController_0" PORT="sZmodDAC_SCLK"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="O" NAME="sZmodDAC_SetFS2_0" SIGIS="undef" SIGNAME="ZmodAWGController_0_sZmodDAC_SetFS2">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="ZmodAWGController_0" PORT="sZmodDAC_SetFS2"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="O" NAME="sZmodDAC_EnOut_0" SIGIS="undef" SIGNAME="ZmodAWGController_0_sZmodDAC_EnOut">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="ZmodAWGController_0" PORT="sZmodDAC_EnOut"/>
-      </CONNECTIONS>
-    </PORT>
     <PORT CLKFREQUENCY="125000000" DIR="I" NAME="sys_clock" SIGIS="clk" SIGNAME="External_Ports_sys_clock">
       <CONNECTIONS>
         <CONNECTION INSTANCE="clk_wiz_0" PORT="clk_in1"/>
@@ -109,36 +59,6 @@
     <PORT DIR="O" NAME="sZmodDAC_SetFS2_1" SIGIS="undef" SIGNAME="ZmodAWGController_1_sZmodDAC_SetFS2">
       <CONNECTIONS>
         <CONNECTION INSTANCE="ZmodAWGController_1" PORT="sZmodDAC_SetFS2"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="IO" LEFT="53" NAME="FIXED_IO_mio" RIGHT="0" SIGIS="undef" SIGNAME="processing_system7_0_MIO">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="processing_system7_0" PORT="MIO"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="IO" NAME="FIXED_IO_ddr_vrn" SIGIS="undef" SIGNAME="processing_system7_0_DDR_VRN">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="processing_system7_0" PORT="DDR_VRN"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="IO" NAME="FIXED_IO_ddr_vrp" SIGIS="undef" SIGNAME="processing_system7_0_DDR_VRP">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="processing_system7_0" PORT="DDR_VRP"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="IO" NAME="FIXED_IO_ps_srstb" SIGIS="undef" SIGNAME="processing_system7_0_PS_SRSTB">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="processing_system7_0" PORT="PS_SRSTB"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="IO" NAME="FIXED_IO_ps_clk" SIGIS="undef" SIGNAME="processing_system7_0_PS_CLK">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="processing_system7_0" PORT="PS_CLK"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="IO" NAME="FIXED_IO_ps_porb" SIGIS="undef" SIGNAME="processing_system7_0_PS_PORB">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="processing_system7_0" PORT="PS_PORB"/>
       </CONNECTIONS>
     </PORT>
     <PORT DIR="IO" NAME="DDR_cas_n" SIGIS="undef" SIGNAME="processing_system7_0_DDR_CAS_n">
@@ -216,24 +136,99 @@
         <CONNECTION INSTANCE="processing_system7_0" PORT="DDR_DQS"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="I" LEFT="1" NAME="btn_2bits_tri_i" RIGHT="0" SIGIS="undef" SIGNAME="axi_gpio_0_gpio_io_i">
+    <PORT DIR="IO" LEFT="53" NAME="FIXED_IO_mio" RIGHT="0" SIGIS="undef" SIGNAME="processing_system7_0_MIO">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="processing_system7_0" PORT="MIO"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="IO" NAME="FIXED_IO_ddr_vrn" SIGIS="undef" SIGNAME="processing_system7_0_DDR_VRN">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="processing_system7_0" PORT="DDR_VRN"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="IO" NAME="FIXED_IO_ddr_vrp" SIGIS="undef" SIGNAME="processing_system7_0_DDR_VRP">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="processing_system7_0" PORT="DDR_VRP"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="IO" NAME="FIXED_IO_ps_srstb" SIGIS="undef" SIGNAME="processing_system7_0_PS_SRSTB">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="processing_system7_0" PORT="PS_SRSTB"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="IO" NAME="FIXED_IO_ps_clk" SIGIS="undef" SIGNAME="processing_system7_0_PS_CLK">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="processing_system7_0" PORT="PS_CLK"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="IO" NAME="FIXED_IO_ps_porb" SIGIS="undef" SIGNAME="processing_system7_0_PS_PORB">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="processing_system7_0" PORT="PS_PORB"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="5" NAME="gpio2_io_o_0" RIGHT="0" SIGIS="undef" SIGNAME="axi_gpio_0_gpio2_io_o">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="axi_gpio_0" PORT="gpio2_io_o"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="1" NAME="gpio_io_i_0" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_gpio_io_i_0">
       <CONNECTIONS>
         <CONNECTION INSTANCE="axi_gpio_0" PORT="gpio_io_i"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="O" LEFT="5" NAME="rgbled_6bits_tri_o" RIGHT="0" SIGIS="undef" SIGNAME="axi_gpio_0_gpio2_io_o">
+    <PORT DIR="O" NAME="sZmodDAC_SetFS1_0" SIGIS="undef" SIGNAME="ZmodAWGController_0_sZmodDAC_SetFS1">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="axi_gpio_0" PORT="gpio2_io_o"/>
+        <CONNECTION INSTANCE="ZmodAWGController_0" PORT="sZmodDAC_SetFS1"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT CLKFREQUENCY="100000000" DIR="O" NAME="ZmodDAC_ClkIO_0" SIGIS="clk" SIGNAME="ZmodAWGController_0_ZmodDAC_ClkIO">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="ZmodAWGController_0" PORT="ZmodDAC_ClkIO"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT CLKFREQUENCY="100000000" DIR="O" NAME="ZmodDAC_ClkIn_0" SIGIS="clk" SIGNAME="ZmodAWGController_0_ZmodDAC_ClkIn">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="ZmodAWGController_0" PORT="ZmodDAC_ClkIn"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="13" NAME="dZmodDAC_Data_0" RIGHT="0" SIGIS="undef" SIGNAME="ZmodAWGController_0_dZmodDAC_Data">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="ZmodAWGController_0" PORT="dZmodDAC_Data"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="IO" NAME="sZmodDAC_SDIO_0" SIGIS="undef" SIGNAME="External_Ports_sZmodDAC_SDIO_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="ZmodAWGController_0" PORT="sZmodDAC_SDIO"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="sZmodDAC_Reset_0" SIGIS="rst" SIGNAME="ZmodAWGController_0_sZmodDAC_Reset">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="ZmodAWGController_0" PORT="sZmodDAC_Reset"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="sZmodDAC_CS_0" SIGIS="undef" SIGNAME="ZmodAWGController_0_sZmodDAC_CS">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="ZmodAWGController_0" PORT="sZmodDAC_CS"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="sZmodDAC_SCLK_0" SIGIS="undef" SIGNAME="ZmodAWGController_0_sZmodDAC_SCLK">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="ZmodAWGController_0" PORT="sZmodDAC_SCLK"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="sZmodDAC_SetFS2_0" SIGIS="undef" SIGNAME="ZmodAWGController_0_sZmodDAC_SetFS2">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="ZmodAWGController_0" PORT="sZmodDAC_SetFS2"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="sZmodDAC_EnOut_0" SIGIS="undef" SIGNAME="ZmodAWGController_0_sZmodDAC_EnOut">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="ZmodAWGController_0" PORT="sZmodDAC_EnOut"/>
       </CONNECTIONS>
     </PORT>
   </EXTERNALPORTS>
 
   <EXTERNALINTERFACES>
-    <BUSINTERFACE BUSNAME="axi_gpio_0_GPIO" NAME="btn_2bits" TYPE="INITIATOR">
-      <PORTMAPS>
-        <PORTMAP LOGICAL="TRI_I" PHYSICAL="btn_2bits_tri_i"/>
-      </PORTMAPS>
-    </BUSINTERFACE>
     <BUSINTERFACE BUSNAME="processing_system7_0_DDR" DATAWIDTH="8" NAME="DDR" TYPE="INITIATOR">
       <PARAMETER NAME="CAN_DEBUG" VALUE="false"/>
       <PARAMETER NAME="TIMEPERIOD_PS" VALUE="1250"/>
@@ -278,11 +273,6 @@
         <PORTMAP LOGICAL="PS_PORB" PHYSICAL="FIXED_IO_ps_porb"/>
       </PORTMAPS>
     </BUSINTERFACE>
-    <BUSINTERFACE BUSNAME="axi_gpio_0_GPIO2" NAME="rgbled_6bits" TYPE="INITIATOR">
-      <PORTMAPS>
-        <PORTMAP LOGICAL="TRI_O" PHYSICAL="rgbled_6bits_tri_o"/>
-      </PORTMAPS>
-    </BUSINTERFACE>
   </EXTERNALINTERFACES>
 
   <MODULES>
@@ -303,10 +293,10 @@
         <PARAMETER NAME="kCh2LgAddCoefStatic" VALUE="&quot;000000000000000000&quot;"/>
         <PARAMETER NAME="kCh2HgMultCoefStatic" VALUE="&quot;010000000000000000&quot;"/>
         <PARAMETER NAME="kCh2HgAddCoefStatic" VALUE="&quot;000000000000000000&quot;"/>
-        <PARAMETER NAME="kCh1ScaleStatic" VALUE="&quot;1&quot;"/>
-        <PARAMETER NAME="kCh2ScaleStatic" VALUE="&quot;0&quot;"/>
+        <PARAMETER NAME="kCh1ScaleStatic" VALUE="&quot;0&quot;"/>
+        <PARAMETER NAME="kCh2ScaleStatic" VALUE="&quot;1&quot;"/>
         <PARAMETER NAME="kZmodID" VALUE="7"/>
-        <PARAMETER NAME="Component_Name" VALUE="design_1_ZmodAWGController_0_0"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_ZmodAWGController_0_4"/>
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
       <PORTS>
@@ -756,8 +746,8 @@
         <PARAMETER NAME="C_TRI_DEFAULT_2" VALUE="0xFFFFFFFF"/>
         <PARAMETER NAME="Component_Name" VALUE="design_1_axi_gpio_0_0"/>
         <PARAMETER NAME="USE_BOARD_FLOW" VALUE="true"/>
-        <PARAMETER NAME="GPIO_BOARD_INTERFACE" VALUE="btn_2bits"/>
-        <PARAMETER NAME="GPIO2_BOARD_INTERFACE" VALUE="rgbled_6bits"/>
+        <PARAMETER NAME="GPIO_BOARD_INTERFACE" VALUE="Custom"/>
+        <PARAMETER NAME="GPIO2_BOARD_INTERFACE" VALUE="Custom"/>
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
         <PARAMETER NAME="C_BASEADDR" VALUE="0x41200000"/>
         <PARAMETER NAME="C_HIGHADDR" VALUE="0x4120FFFF"/>
@@ -858,17 +848,15 @@
             <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="M00_AXI_rready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="1" NAME="gpio_io_i" RIGHT="0" SIGIS="undef" SIGNAME="axi_gpio_0_gpio_io_i">
+        <PORT DIR="I" LEFT="1" NAME="gpio_io_i" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_gpio_io_i_0">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="design_1_imp" PORT="btn_2bits_tri_i"/>
+            <CONNECTION INSTANCE="External_Ports" PORT="gpio_io_i_0"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" LEFT="5" NAME="gpio2_io_o" RIGHT="0" SIGIS="undef" SIGNAME="axi_gpio_0_gpio2_io_o">
           <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="gpio2_io_o_0"/>
             <CONNECTION INSTANCE="mult_gen_0" PORT="B"/>
-          </CONNECTIONS>
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="design_1_imp" PORT="rgbled_6bits_tri_o"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
@@ -925,12 +913,12 @@
             <PORTMAP LOGICAL="WVALID" PHYSICAL="s_axi_wvalid"/>
           </PORTMAPS>
         </BUSINTERFACE>
-        <BUSINTERFACE BUSNAME="axi_gpio_0_GPIO" NAME="GPIO" TYPE="INITIATOR" VLNV="xilinx.com:interface:gpio:1.0">
+        <BUSINTERFACE BUSNAME="__NOC__" NAME="GPIO" TYPE="INITIATOR" VLNV="xilinx.com:interface:gpio:1.0">
           <PORTMAPS>
             <PORTMAP LOGICAL="TRI_I" PHYSICAL="gpio_io_i"/>
           </PORTMAPS>
         </BUSINTERFACE>
-        <BUSINTERFACE BUSNAME="axi_gpio_0_GPIO2" NAME="GPIO2" TYPE="INITIATOR" VLNV="xilinx.com:interface:gpio:1.0">
+        <BUSINTERFACE BUSNAME="__NOC__" NAME="GPIO2" TYPE="INITIATOR" VLNV="xilinx.com:interface:gpio:1.0">
           <PORTMAPS>
             <PORTMAP LOGICAL="TRI_O" PHYSICAL="gpio2_io_o"/>
           </PORTMAPS>
@@ -1585,16 +1573,16 @@
         </PORT>
         <PORT CLKFREQUENCY="100000000" DIR="O" NAME="clk_100" SIGIS="clk" SIGNAME="clk_wiz_0_clk_100">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="ZmodAWGController_0" PORT="DAC_InIO_Clk"/>
-            <CONNECTION INSTANCE="ZmodAWGController_0" PORT="SysClk100"/>
             <CONNECTION INSTANCE="ZmodAWGController_1" PORT="SysClk100"/>
             <CONNECTION INSTANCE="ZmodAWGController_1" PORT="DAC_InIO_Clk"/>
+            <CONNECTION INSTANCE="ZmodAWGController_0" PORT="DAC_InIO_Clk"/>
+            <CONNECTION INSTANCE="ZmodAWGController_0" PORT="SysClk100"/>
           </CONNECTIONS>
         </PORT>
         <PORT CLKFREQUENCY="100000000" DIR="O" NAME="clk_100n" SIGIS="clk" SIGNAME="clk_wiz_0_clk_100n">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="ZmodAWGController_0" PORT="DAC_Clk"/>
             <CONNECTION INSTANCE="ZmodAWGController_1" PORT="DAC_Clk"/>
+            <CONNECTION INSTANCE="ZmodAWGController_0" PORT="DAC_Clk"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
@@ -3420,93 +3408,6 @@
             <CONNECTION INSTANCE="rst_ps7_0_100M" PORT="peripheral_aresetn"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="31" NAME="M00_AXI_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="axi_gpio_0_s_axi_awaddr">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_gpio_0" PORT="s_axi_awaddr"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="M00_AXI_awprot" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M00_AXI_awvalid" SIGIS="undef" SIGNAME="axi_gpio_0_s_axi_awvalid">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_gpio_0" PORT="s_axi_awvalid"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="M00_AXI_awready" SIGIS="undef" SIGNAME="axi_gpio_0_s_axi_awready">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_gpio_0" PORT="s_axi_awready"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="31" NAME="M00_AXI_wdata" RIGHT="0" SIGIS="undef" SIGNAME="axi_gpio_0_s_axi_wdata">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_gpio_0" PORT="s_axi_wdata"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="3" NAME="M00_AXI_wstrb" RIGHT="0" SIGIS="undef" SIGNAME="axi_gpio_0_s_axi_wstrb">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_gpio_0" PORT="s_axi_wstrb"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="M00_AXI_wvalid" SIGIS="undef" SIGNAME="axi_gpio_0_s_axi_wvalid">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_gpio_0" PORT="s_axi_wvalid"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="M00_AXI_wready" SIGIS="undef" SIGNAME="axi_gpio_0_s_axi_wready">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_gpio_0" PORT="s_axi_wready"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="1" NAME="M00_AXI_bresp" RIGHT="0" SIGIS="undef" SIGNAME="axi_gpio_0_s_axi_bresp">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_gpio_0" PORT="s_axi_bresp"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="M00_AXI_bvalid" SIGIS="undef" SIGNAME="axi_gpio_0_s_axi_bvalid">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_gpio_0" PORT="s_axi_bvalid"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="M00_AXI_bready" SIGIS="undef" SIGNAME="axi_gpio_0_s_axi_bready">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_gpio_0" PORT="s_axi_bready"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="31" NAME="M00_AXI_araddr" RIGHT="0" SIGIS="undef" SIGNAME="axi_gpio_0_s_axi_araddr">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_gpio_0" PORT="s_axi_araddr"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="M00_AXI_arprot" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M00_AXI_arvalid" SIGIS="undef" SIGNAME="axi_gpio_0_s_axi_arvalid">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_gpio_0" PORT="s_axi_arvalid"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="M00_AXI_arready" SIGIS="undef" SIGNAME="axi_gpio_0_s_axi_arready">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_gpio_0" PORT="s_axi_arready"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="31" NAME="M00_AXI_rdata" RIGHT="0" SIGIS="undef" SIGNAME="axi_gpio_0_s_axi_rdata">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_gpio_0" PORT="s_axi_rdata"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="1" NAME="M00_AXI_rresp" RIGHT="0" SIGIS="undef" SIGNAME="axi_gpio_0_s_axi_rresp">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_gpio_0" PORT="s_axi_rresp"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="M00_AXI_rvalid" SIGIS="undef" SIGNAME="axi_gpio_0_s_axi_rvalid">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_gpio_0" PORT="s_axi_rvalid"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="M00_AXI_rready" SIGIS="undef" SIGNAME="axi_gpio_0_s_axi_rready">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_gpio_0" PORT="s_axi_rready"/>
-          </CONNECTIONS>
-        </PORT>
         <PORT DIR="I" LEFT="11" NAME="S00_AXI_awid" RIGHT="0" SIGIS="undef" SIGNAME="processing_system7_0_M_AXI_GP0_AWID">
           <CONNECTIONS>
             <CONNECTION INSTANCE="processing_system7_0" PORT="M_AXI_GP0_AWID"/>
@@ -3697,6 +3598,93 @@
             <CONNECTION INSTANCE="processing_system7_0" PORT="M_AXI_GP0_RREADY"/>
           </CONNECTIONS>
         </PORT>
+        <PORT DIR="O" LEFT="31" NAME="M00_AXI_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="axi_gpio_0_s_axi_awaddr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_gpio_0" PORT="s_axi_awaddr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="M00_AXI_awprot" SIGIS="undef"/>
+        <PORT DIR="O" NAME="M00_AXI_awvalid" SIGIS="undef" SIGNAME="axi_gpio_0_s_axi_awvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_gpio_0" PORT="s_axi_awvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="M00_AXI_awready" SIGIS="undef" SIGNAME="axi_gpio_0_s_axi_awready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_gpio_0" PORT="s_axi_awready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="M00_AXI_wdata" RIGHT="0" SIGIS="undef" SIGNAME="axi_gpio_0_s_axi_wdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_gpio_0" PORT="s_axi_wdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="M00_AXI_wstrb" RIGHT="0" SIGIS="undef" SIGNAME="axi_gpio_0_s_axi_wstrb">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_gpio_0" PORT="s_axi_wstrb"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="M00_AXI_wvalid" SIGIS="undef" SIGNAME="axi_gpio_0_s_axi_wvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_gpio_0" PORT="s_axi_wvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="M00_AXI_wready" SIGIS="undef" SIGNAME="axi_gpio_0_s_axi_wready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_gpio_0" PORT="s_axi_wready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="M00_AXI_bresp" RIGHT="0" SIGIS="undef" SIGNAME="axi_gpio_0_s_axi_bresp">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_gpio_0" PORT="s_axi_bresp"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="M00_AXI_bvalid" SIGIS="undef" SIGNAME="axi_gpio_0_s_axi_bvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_gpio_0" PORT="s_axi_bvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="M00_AXI_bready" SIGIS="undef" SIGNAME="axi_gpio_0_s_axi_bready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_gpio_0" PORT="s_axi_bready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="M00_AXI_araddr" RIGHT="0" SIGIS="undef" SIGNAME="axi_gpio_0_s_axi_araddr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_gpio_0" PORT="s_axi_araddr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="M00_AXI_arprot" SIGIS="undef"/>
+        <PORT DIR="O" NAME="M00_AXI_arvalid" SIGIS="undef" SIGNAME="axi_gpio_0_s_axi_arvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_gpio_0" PORT="s_axi_arvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="M00_AXI_arready" SIGIS="undef" SIGNAME="axi_gpio_0_s_axi_arready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_gpio_0" PORT="s_axi_arready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="M00_AXI_rdata" RIGHT="0" SIGIS="undef" SIGNAME="axi_gpio_0_s_axi_rdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_gpio_0" PORT="s_axi_rdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="M00_AXI_rresp" RIGHT="0" SIGIS="undef" SIGNAME="axi_gpio_0_s_axi_rresp">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_gpio_0" PORT="s_axi_rresp"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="M00_AXI_rvalid" SIGIS="undef" SIGNAME="axi_gpio_0_s_axi_rvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_gpio_0" PORT="s_axi_rvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="M00_AXI_rready" SIGIS="undef" SIGNAME="axi_gpio_0_s_axi_rready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_gpio_0" PORT="s_axi_rready"/>
+          </CONNECTIONS>
+        </PORT>
       </PORTS>
       <BUSINTERFACES>
         <BUSINTERFACE BUSNAME="processing_system7_0_M_AXI_GP0" DATAWIDTH="32" NAME="S00_AXI" TYPE="SLAVE" VLNV="xilinx.com:interface:aximm:1.0">
@@ -3877,8 +3865,8 @@
         </PORT>
         <PORT DIR="O" LEFT="31" NAME="dout" RIGHT="0" SIGIS="undef" SIGNAME="xlconcat_0_dout">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="ZmodAWGController_0" PORT="cDataAxisTdata"/>
             <CONNECTION INSTANCE="ZmodAWGController_1" PORT="cDataAxisTdata"/>
+            <CONNECTION INSTANCE="ZmodAWGController_0" PORT="cDataAxisTdata"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
@@ -3895,12 +3883,12 @@
       <PORTS>
         <PORT DIR="O" LEFT="0" NAME="dout" RIGHT="0" SIGIS="undef" SIGNAME="xlconstant_0_dout">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="ZmodAWGController_0" PORT="sDAC_EnIn"/>
-            <CONNECTION INSTANCE="ZmodAWGController_0" PORT="sTestMode"/>
             <CONNECTION INSTANCE="ZmodAWGController_1" PORT="sDAC_EnIn"/>
             <CONNECTION INSTANCE="ZmodAWGController_1" PORT="sTestMode"/>
-            <CONNECTION INSTANCE="ZmodAWGController_0" PORT="cDataAxisTvalid"/>
             <CONNECTION INSTANCE="ZmodAWGController_1" PORT="cDataAxisTvalid"/>
+            <CONNECTION INSTANCE="ZmodAWGController_0" PORT="sDAC_EnIn"/>
+            <CONNECTION INSTANCE="ZmodAWGController_0" PORT="sTestMode"/>
+            <CONNECTION INSTANCE="ZmodAWGController_0" PORT="cDataAxisTvalid"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
@@ -3936,8 +3924,8 @@
         <PORT DIR="O" LEFT="0" NAME="dout" RIGHT="0" SIGIS="undef" SIGNAME="xlconstant_2_dout">
           <CONNECTIONS>
             <CONNECTION INSTANCE="ZmodAWGController_1" PORT="aRst_n"/>
-            <CONNECTION INSTANCE="ZmodAWGController_0" PORT="aRst_n"/>
             <CONNECTION INSTANCE="clk_wiz_0" PORT="resetn"/>
+            <CONNECTION INSTANCE="ZmodAWGController_0" PORT="aRst_n"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>

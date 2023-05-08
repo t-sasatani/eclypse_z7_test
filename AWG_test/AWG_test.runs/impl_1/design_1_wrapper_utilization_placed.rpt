@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date         : Fri May  5 18:46:39 2023
+| Date         : Mon May  8 02:49:45 2023
 | Host         : DESKTOP-1P4LGSG running 64-bit major release  (build 9200)
 | Command      : report_utilization -file design_1_wrapper_utilization_placed.rpt -pb design_1_wrapper_utilization_placed.pb
 | Design       : design_1_wrapper
@@ -36,8 +36,8 @@ Table of Contents
 |   LUT as Memory            |   60 |     0 |     17400 |  0.34 |
 |     LUT as Distributed RAM |    0 |     0 |           |       |
 |     LUT as Shift Register  |   60 |     0 |           |       |
-| Slice Registers            |  917 |     0 |    106400 |  0.86 |
-|   Register as Flip Flop    |  917 |     0 |    106400 |  0.86 |
+| Slice Registers            |  923 |     0 |    106400 |  0.87 |
+|   Register as Flip Flop    |  923 |     0 |    106400 |  0.87 |
 |   Register as Latch        |    0 |     0 |    106400 |  0.00 |
 | F7 Muxes                   |    2 |     0 |     26600 | <0.01 |
 | F8 Muxes                   |    0 |     0 |     13300 |  0.00 |
@@ -59,7 +59,7 @@ Table of Contents
 | 6     |          Yes |           - |          Set |
 | 320   |          Yes |           - |        Reset |
 | 21    |          Yes |         Set |            - |
-| 570   |          Yes |       Reset |            - |
+| 576   |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -69,9 +69,9 @@ Table of Contents
 +--------------------------------------------+------+-------+-----------+-------+
 |                  Site Type                 | Used | Fixed | Available | Util% |
 +--------------------------------------------+------+-------+-----------+-------+
-| Slice                                      |  313 |     0 |     13300 |  2.35 |
-|   SLICEL                                   |  189 |     0 |           |       |
-|   SLICEM                                   |  124 |     0 |           |       |
+| Slice                                      |  324 |     0 |     13300 |  2.44 |
+|   SLICEL                                   |  192 |     0 |           |       |
+|   SLICEM                                   |  132 |     0 |           |       |
 | LUT as Logic                               |  731 |     0 |     53200 |  1.37 |
 |   using O5 output only                     |    0 |       |           |       |
 |   using O6 output only                     |  517 |       |           |       |
@@ -82,11 +82,11 @@ Table of Contents
 |     using O5 output only                   |    0 |       |           |       |
 |     using O6 output only                   |   56 |       |           |       |
 |     using O5 and O6                        |    4 |       |           |       |
-| Slice Registers                            |  917 |     0 |    106400 |  0.86 |
-|   Register driven from within the Slice    |  598 |       |           |       |
-|   Register driven from outside the Slice   |  319 |       |           |       |
-|     LUT in front of the register is unused |  251 |       |           |       |
-|     LUT in front of the register is used   |   68 |       |           |       |
+| Slice Registers                            |  923 |     0 |    106400 |  0.87 |
+|   Register driven from within the Slice    |  594 |       |           |       |
+|   Register driven from outside the Slice   |  329 |       |           |       |
+|     LUT in front of the register is unused |  249 |       |           |       |
+|     LUT in front of the register is used   |   80 |       |           |       |
 | Unique Control Sets                        |   55 |       |     13300 |  0.41 |
 +--------------------------------------------+------+-------+-----------+-------+
 * Note: Available Control Sets calculated as Slice Registers / 8, Review the Control Sets Report for more information regarding control sets.
@@ -122,9 +122,9 @@ Table of Contents
 +-----------------------------+------+-------+-----------+--------+
 |          Site Type          | Used | Fixed | Available |  Util% |
 +-----------------------------+------+-------+-----------+--------+
-| Bonded IOB                  |   49 |    49 |       200 |  24.50 |
-|   IOB Master Pads           |   26 |       |           |        |
-|   IOB Slave Pads            |   23 |       |           |        |
+| Bonded IOB                  |   55 |    55 |       200 |  27.50 |
+|   IOB Master Pads           |   29 |       |           |        |
+|   IOB Slave Pads            |   26 |       |           |        |
 | Bonded IPADs                |    0 |     0 |         2 |   0.00 |
 | Bonded IOPADs               |  130 |   130 |       130 | 100.00 |
 | PHY_CONTROL                 |    0 |     0 |         4 |   0.00 |
@@ -181,7 +181,7 @@ Table of Contents
 +------------+------+----------------------+
 |  Ref Name  | Used |  Functional Category |
 +------------+------+----------------------+
-| FDRE       |  570 |         Flop & Latch |
+| FDRE       |  576 |         Flop & Latch |
 | FDCE       |  320 |         Flop & Latch |
 | LUT3       |  246 |                  LUT |
 | LUT6       |  226 |                  LUT |
@@ -189,9 +189,9 @@ Table of Contents
 | LUT4       |  167 |                  LUT |
 | BIBUF      |  130 |                   IO |
 | LUT2       |  120 |                  LUT |
+| OBUF       |   50 |                   IO |
 | CARRY4     |   47 |           CarryLogic |
 | SRLC32E    |   45 |   Distributed Memory |
-| OBUF       |   44 |                   IO |
 | ODDR       |   32 |                   IO |
 | FDSE       |   21 |         Flop & Latch |
 | SRL16E     |   19 |   Distributed Memory |
@@ -228,8 +228,8 @@ Table of Contents
 | design_1_c_counter_binary_0_0   |    1 |
 | design_1_axi_gpio_0_0           |    1 |
 | design_1_auto_pc_0              |    1 |
+| design_1_ZmodAWGController_0_4  |    1 |
 | design_1_ZmodAWGController_0_3  |    1 |
-| design_1_ZmodAWGController_0_0  |    1 |
 +---------------------------------+------+
 
 
